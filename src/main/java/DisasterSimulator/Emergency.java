@@ -3,9 +3,12 @@ package edu.curtin.DisasterSimulator;
 public class Emergency
 {
     private EmergencyState state;
+    private EmergencyState previousState;
     private String location = " ";
     private int startTime = 0;
     // private int endTime = 0;
+    private int count = 0;
+    private boolean response = false;
 
     public int getStartTime()
     {
@@ -37,6 +40,11 @@ public class Emergency
         return state;
     }
 
+    public void setPreviousState(EmergencyState newState)
+    {
+        previousState = newState;
+    }
+
     public void respond(String dep)
     {
         String arrival = " ";
@@ -45,6 +53,7 @@ public class Emergency
         {
             arrival = "arrived";
             f = "for";
+            response = true;
         }
         else
         {
@@ -52,6 +61,7 @@ public class Emergency
             {
                 arrival = "departed";
                 f = "from";
+                response = false;
             }
         }
         if(state instanceof LowIntensity)
@@ -66,5 +76,44 @@ public class Emergency
         {
             System.out.println("Responders have "+arrival+" "+f+" the chemical at "+location);
         }
+    }
+
+    public boolean getResponse()
+    {
+        return response;
+    }
+
+    public String incrementCount()
+    {
+        String reply = " ";
+        state.incrementCount(this, count);
+        if(state instanceof End)
+        {
+            if(previousState instanceof LowIntensity)
+            {
+                reply = "fire end "+location;
+            }
+            if(previousState instanceof FloodStart)
+            {
+                reply = "flood end "+location;
+            }
+            if(previousState instanceof ChemStart)
+            {
+                reply = "chemical end "+location;
+            }
+        }
+        // if(state instanceof HighIntensity)
+        // {
+        //     reply = "fire high "+location;
+        // }
+        if(state instanceof LowIntensity)
+        {
+            if(previousState instanceof HighIntensity)
+            {
+                reply = "fire low "+location;
+            }
+        }
+        count = count + 1;
+        return reply;
     }
 }

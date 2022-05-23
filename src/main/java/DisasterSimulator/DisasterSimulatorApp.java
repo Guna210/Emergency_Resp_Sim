@@ -67,7 +67,9 @@ public class DisasterSimulatorApp
                 int startTime = Integer.parseInt(splitLine[0]);
                 String key = splitLine[1]+splitLine[2];
                 Emergency emg = new Emergency();
-                emg.setState(new LowIntensity());
+                EmergencyState emgState = new LowIntensity();
+                emg.setState(emgState);
+                emg.setPreviousState(emgState);
                 emg.setStartTime(startTime);
                 emg.setLocation(splitLine[2]);
                 emergencies.put(key, emg);
@@ -77,7 +79,9 @@ public class DisasterSimulatorApp
                 int startTime = Integer.parseInt(splitLine[0]);
                 String key = splitLine[1]+splitLine[2];
                 Emergency emg = new Emergency();
-                emg.setState(new FloodStart());
+                EmergencyState emgState = new FloodStart();
+                emg.setState(emgState);
+                emg.setPreviousState(emgState);
                 emg.setStartTime(startTime);
                 emg.setLocation(splitLine[2]);
                 emergencies.put(key, emg);
@@ -87,7 +91,9 @@ public class DisasterSimulatorApp
                 int startTime = Integer.parseInt(splitLine[0]);
                 String key = splitLine[1]+splitLine[2];
                 Emergency emg = new Emergency();
-                emg.setState(new ChemStart());
+                EmergencyState emgState = new ChemStart();
+                emg.setState(emgState);
+                emg.setPreviousState(emgState);
                 emg.setStartTime(startTime);
                 emg.setLocation(splitLine[2]);
                 emergencies.put(key, emg);

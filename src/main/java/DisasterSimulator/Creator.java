@@ -7,6 +7,7 @@ public class Creator
     private List<String> eventList = new ArrayList<>();
     private Map<String, Emergency> emergencyMap = new HashMap<>();
     private Map<String, Emergency> activeMap = new HashMap<>();
+    private List<String> removeList = new ArrayList<>();
     private List<String> responseList = new ArrayList<>();
     private int count = 0;
     
@@ -61,6 +62,24 @@ public class Creator
                         emg.respond(splitLine[1]);
                     }
                 }
+            }
+            for(String key : activeMap.keySet())
+            {
+                String reply = " ";
+                Emergency emg = activeMap.get(key);
+                reply = emg.incrementCount();
+                if(!reply.equals(" "))
+                {
+                    resCom.send(reply);
+                }
+                if(emg.getState() instanceof End)
+                {
+                    removeList.add(key);
+                }
+            }
+            for(String key : removeList)
+            {
+                activeMap.remove(key);
             }
             count = count + 1;
             try
