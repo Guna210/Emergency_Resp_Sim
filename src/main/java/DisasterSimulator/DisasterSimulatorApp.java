@@ -79,7 +79,7 @@ public class DisasterSimulatorApp
                 int startTime = Integer.parseInt(splitLine[0]);
                 String key = splitLine[1]+splitLine[2];
                 Emergency emg = new Flood();
-                EmergencyState emgState = new FloodStart();
+                EmergencyState emgState = new Start();
                 emg.setState(emgState);
                 // emg.setPreviousState(emgState);
                 emg.setStartTime(startTime);
@@ -91,7 +91,7 @@ public class DisasterSimulatorApp
                 int startTime = Integer.parseInt(splitLine[0]);
                 String key = splitLine[1]+splitLine[2];
                 Emergency emg = new Chemical();
-                EmergencyState emgState = new ChemStart();
+                EmergencyState emgState = new Start();
                 emg.setState(emgState);
                 // emg.setPreviousState(emgState);
                 emg.setStartTime(startTime);

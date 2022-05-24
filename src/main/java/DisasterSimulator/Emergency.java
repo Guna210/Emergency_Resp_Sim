@@ -123,4 +123,7 @@ public interface Emergency
     public String getLocation();
     public void setStartTime(int time);
     public int getStartTime();
+    public void initiate(ResponderComm resCom);
+    public void respond(String res);
+    public void update();
 }

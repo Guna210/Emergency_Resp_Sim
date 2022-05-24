@@ -24,22 +24,9 @@ public class Creator
                 int startTime = emergencyMap.get(key).getStartTime();
                 if(startTime == count)
                 {
-                    EmergencyState state = emergencyMap.get(key).getState();
-                    if(state instanceof LowIntensity)
-                    {
-                        resCom.send("fire start "+emergencyMap.get(key).getLocation());
-                        activeMap.put(key, emergencyMap.get(key));
-                    }
-                    if(state instanceof FloodStart)
-                    {
-                        resCom.send("flood start "+emergencyMap.get(key).getLocation());
-                        activeMap.put(key, emergencyMap.get(key));
-                    }
-                    if(state instanceof ChemStart)
-                    {
-                        resCom.send("chemical start "+emergencyMap.get(key).getLocation());
-                        activeMap.put(key, emergencyMap.get(key));
-                    }
+                    Emergency emg = emergencyMap.get(key);
+                    emg.initiate(resCom);
+                    activeMap.put(key, emg);
                 }
             }
             responseList = resCom.poll();
@@ -48,35 +35,10 @@ public class Creator
                 if(responseList.get(0).equals("end"))
                 {
                     end = true;
+                    break;
                 }
             }
-            for(String s : responseList)
-            {
-                String[] splitLine = s.split(" ",3);
-                if(splitLine.length >= 3)
-                {
-                    String reply = splitLine[0]+splitLine[2];
-                    if(activeMap.get(reply) != null)
-                    {
-                        Emergency emg = activeMap.get(reply);
-                        emg.respond(splitLine[1]);
-                    }
-                }
-            }
-            for(String key : activeMap.keySet())
-            {
-                String reply = " ";
-                Emergency emg = activeMap.get(key);
-                reply = emg.incrementCount();
-                if(!reply.equals(" "))
-                {
-                    resCom.send(reply);
-                }
-                if(emg.getState() instanceof End)
-                {
-                    removeList.add(key);
-                }
-            }
+            notifyObservers();
             for(String key : removeList)
             {
                 activeMap.remove(key);
@@ -89,6 +51,33 @@ public class Creator
             catch(InterruptedException e)
             {
                 System.out.println(e.getMessage());
+            }
+        }
+    }
+
+    public void notifyObservers()
+    {
+        for(String s : responseList)
+        {
+            String[] splitLine = s.split(" ",3);
+            if(splitLine.length >= 3)
+            {
+                String reply = splitLine[0]+splitLine[2];
+                if(activeMap.get(reply) != null)
+                {
+                    Emergency emg = activeMap.get(reply);
+                    emg.respond(splitLine[1]);
+                }
+            }
+        }
+        for(String key : activeMap.keySet())
+        {
+            String reply = " ";
+            Emergency emg = activeMap.get(key);
+            emg.update();
+            if(emg.getState() instanceof End)
+            {
+                removeList.add(key);
             }
         }
     }
