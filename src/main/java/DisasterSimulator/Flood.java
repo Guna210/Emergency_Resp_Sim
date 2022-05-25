@@ -80,7 +80,8 @@ public class Flood implements Emergency
         if(FLOOD_END_TIME == count)
         {
             state = new End();
-            rComm.send("flood end "+location);
+            changeInState();
+            // rComm.send("flood end "+location);
         }
         else
         {
@@ -99,6 +100,11 @@ public class Flood implements Emergency
             }
         }
         count = count + 1;
+    }
+
+    public void changeInState()
+    {
+        state.changeInState(this, rComm);
     }
 
     public int numberGenerator(int num)

@@ -80,6 +80,7 @@ public class Chemical implements Emergency
         if(cleanCount == CHEM_CLEANUP_TIME)
         {
             state = new End();
+            changeInState();
         }
         else
         {
@@ -98,6 +99,11 @@ public class Chemical implements Emergency
                 cleanCount = cleanCount + 1;
             }
         }
+    }
+
+    public void changeInState()
+    {
+        state.changeInState(this, rComm);
     }
 
     public int numberGenerator(int num)

@@ -86,14 +86,16 @@ public class Fire implements Emergency
         if(cleanCount == FIRE_LOW_CLEANP_TIME)
         {
             state = new End();
-            rComm.send("fire end "+location);
+            changeInState();
+            // rComm.send("fire end "+location);
         }
         else
         {
             if(count == FIRE_LOW_TO_HIGH_TIME)
             {
                 state = new HighIntensity();
-                rComm.send("fire high "+location);
+                changeInState();
+                // rComm.send("fire high "+location);
             }
             if(highCleanCount == FIRE_HIGH_TO_LOW_TIME)
             {
@@ -101,7 +103,8 @@ public class Fire implements Emergency
                 count = 0;
                 cleanCount = 0;
                 highCleanCount = 0;
-                rComm.send("fire low "+location);
+                changeInState();
+                // rComm.send("fire low "+location);
             }
             if(state instanceof LowIntensity)
             {
@@ -142,6 +145,11 @@ public class Fire implements Emergency
             }
         }
         count = count + 1;
+    }
+    
+    public void changeInState()
+    {
+        state.changeInState(this, rComm);
     }
 
     public int numberGenerator(int num)
