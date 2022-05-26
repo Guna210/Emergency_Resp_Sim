@@ -5,16 +5,14 @@ import java.util.*;
 public class Flood implements Emergency
 {
     private static final int FLOOD_END_TIME = 15;
-    private static final int FLOOD_DAMAGE_PROB = 1;
-    private static final int FLOOD_CASUALTY_PROB = 3;
+    private static final int FLOOD_DAMAGE_PROB = 30;
+    private static final int FLOOD_CASUALTY_PROB = 20;
     private EmergencyState state;
     private String location = " ";
     private int startTime = 0;
     private ResponderComm rComm;
     private boolean response = false;
     private int count = 0;
-    private int casualtyCount = 0;
-    private int damageCount = 0;
 
     @Override
     public void setState(EmergencyState newState)
@@ -77,28 +75,7 @@ public class Flood implements Emergency
     @Override
     public void update()
     {
-        if(FLOOD_END_TIME == count)
-        {
-            state = new End();
-            changeInState();
-            // rComm.send("flood end "+location);
-        }
-        else
-        {
-            if(!response)
-            {
-                if(FLOOD_CASUALTY_PROB == numberGenerator(5))
-                {
-                    casualtyCount = casualtyCount + 1;
-                    rComm.send("flood casualty "+casualtyCount+" "+location);
-                }
-            }
-            if(FLOOD_DAMAGE_PROB == numberGenerator(3))
-            {
-                damageCount = damageCount + 1;
-                rComm.send("flood damage "+damageCount+" "+location);
-            }
-        }
+        changeInState();
         count = count + 1;
     }
 
@@ -107,9 +84,28 @@ public class Flood implements Emergency
         state.changeInState(this, rComm);
     }
 
-    public int numberGenerator(int num)
+    public int getFloodEndTime()
     {
-        SplittableRandom rand = new SplittableRandom();
-        return rand.nextInt(num);
+        return FLOOD_END_TIME;
+    }
+
+    public int getFloodCasualty()
+    {
+        return FLOOD_CASUALTY_PROB;
+    }
+
+    public int getFloodDamage()
+    {
+        return FLOOD_DAMAGE_PROB;
+    }
+
+    public int getCount()
+    {
+        return count;
+    }
+
+    public boolean getResponse()
+    {
+        return response;
     }
 }

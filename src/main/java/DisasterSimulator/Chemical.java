@@ -5,16 +5,14 @@ import java.util.*;
 public class Chemical implements Emergency
 {
     private static final int CHEM_CLEANUP_TIME = 10;
-    private static final int CHEM_CASUAL_PROB = 5;
-    private static final int CHEM_CONTAM_PROB = 3;
+    private static final int CHEM_CASUAL_PROB = 20;
+    private static final int CHEM_CONTAM_PROB = 25;
     private EmergencyState state;
     private String location = " ";
     private int startTime = 0;
     private ResponderComm rComm;
     private boolean response = false;
     private int cleanCount = 0;
-    private int casualtyCount = 0;
-    private int damageCount = 0;
 
     @Override
     public void setState(EmergencyState newState)
@@ -77,27 +75,14 @@ public class Chemical implements Emergency
     @Override
     public void update()
     {
-        if(cleanCount == CHEM_CLEANUP_TIME)
+        changeInState();
+        if(response)
         {
-            state = new End();
-            changeInState();
+            cleanCount = cleanCount + 1;
         }
-        else
+        if(!response)
         {
-            if(CHEM_CASUAL_PROB == numberGenerator(10))
-            {
-                casualtyCount = casualtyCount + 1;
-                rComm.send("chemical casualty "+casualtyCount+" "+location);
-            }
-            if(CHEM_CONTAM_PROB == numberGenerator(5))
-            {
-                damageCount = damageCount + 1;
-                rComm.send("chemical contam "+damageCount+" "+location);
-            }
-            if(response)
-            {
-                cleanCount = cleanCount + 1;
-            }
+            cleanCount = 0;
         }
     }
 
@@ -106,9 +91,28 @@ public class Chemical implements Emergency
         state.changeInState(this, rComm);
     }
 
-    public int numberGenerator(int num)
+    public int getChemCleanTime()
     {
-        SplittableRandom rand = new SplittableRandom();
-        return rand.nextInt(num);
+        return CHEM_CLEANUP_TIME;
+    }
+
+    public int getChemCasualty()
+    {
+        return CHEM_CASUAL_PROB;
+    }
+
+    public int getChemDamage()
+    {
+        return CHEM_CONTAM_PROB;
+    }
+
+    public int getCleanCount()
+    {
+        return cleanCount;
+    }
+
+    public boolean getResponse()
+    {
+        return response;
     }
 }

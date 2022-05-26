@@ -7,18 +7,16 @@ public class Fire implements Emergency
     private static final int FIRE_LOW_TO_HIGH_TIME = 12;
     private static final int FIRE_LOW_CLEANP_TIME = 6;
     private static final int FIRE_HIGH_TO_LOW_TIME = 8;
-    private static final int FIRE_LOW_CASUALTY_PROB = 3;
-    private static final int FIRE_LOW_DAMAGE_PROB = 2;
-    private static final int FIRE_HIGH_CASUALTY_PROB = 1;
-    private static final int FIRE_HIGH_DAMAGE_PROB = 1;
+    private static final int FIRE_LOW_CASUALTY_PROB = 20;
+    private static final int FIRE_LOW_DAMAGE_PROB = 20;
+    private static final int FIRE_HIGH_CASUALTY_PROB = 30;
+    private static final int FIRE_HIGH_DAMAGE_PROB = 40;
     private EmergencyState state;
     private String location = " ";
     private int startTime = 0;
     private ResponderComm rComm;
     private boolean response = false;
     private int count = 0;
-    private int cleanCount = 0;
-    private int highCleanCount = 0;
     private int casualtyCount = 0;
     private int damageCount = 0;
 
@@ -83,67 +81,7 @@ public class Fire implements Emergency
     @Override
     public void update()
     {
-        if(cleanCount == FIRE_LOW_CLEANP_TIME)
-        {
-            state = new End();
-            changeInState();
-            // rComm.send("fire end "+location);
-        }
-        else
-        {
-            if(count == FIRE_LOW_TO_HIGH_TIME)
-            {
-                state = new HighIntensity();
-                changeInState();
-                // rComm.send("fire high "+location);
-            }
-            if(highCleanCount == FIRE_HIGH_TO_LOW_TIME)
-            {
-                state = new LowIntensity();
-                count = 0;
-                cleanCount = 0;
-                highCleanCount = 0;
-                changeInState();
-                // rComm.send("fire low "+location);
-            }
-            if(state instanceof LowIntensity)
-            {
-                if(FIRE_LOW_CASUALTY_PROB == numberGenerator(5))
-                {
-                    casualtyCount = casualtyCount + 1;
-                    rComm.send("fire casualty "+casualtyCount+" "+location);
-                }
-                if(FIRE_LOW_DAMAGE_PROB == numberGenerator(3))
-                {
-                    damageCount = damageCount + 1;
-                    rComm.send("fire damage "+damageCount+" "+location);
-                }
-            }
-            else
-            {
-                if(state instanceof HighIntensity)
-                {
-                    if(FIRE_HIGH_CASUALTY_PROB == numberGenerator(2))
-                    {
-                        casualtyCount = casualtyCount + 1;
-                        rComm.send("fire casualty "+casualtyCount+" "+location);
-                    }
-                    if(FIRE_HIGH_DAMAGE_PROB == numberGenerator(2))
-                    {
-                        damageCount = damageCount + 1;
-                        rComm.send("fire damage "+damageCount+" "+location);
-                    }
-                }
-            }
-            if((response)&&(state instanceof LowIntensity))
-            {
-                cleanCount = cleanCount + 1;
-            }
-            if((response)&&(state instanceof HighIntensity))
-            {
-                highCleanCount = highCleanCount + 1;
-            }
-        }
+        changeInState();
         count = count + 1;
     }
     
@@ -152,9 +90,73 @@ public class Fire implements Emergency
         state.changeInState(this, rComm);
     }
 
-    public int numberGenerator(int num)
+    public int getFireLowHigh()
     {
-        SplittableRandom rand = new SplittableRandom();
-        return rand.nextInt(num);
+        return FIRE_LOW_TO_HIGH_TIME;
+    }
+
+    public int getFireLowClean()
+    {
+        return FIRE_LOW_CLEANP_TIME;
+    }
+
+    public int getFireHighLow()
+    {
+        return FIRE_HIGH_TO_LOW_TIME;
+    }
+
+    public int getFireLowCasualty()
+    {
+        return FIRE_LOW_CASUALTY_PROB;
+    }
+
+    public int getFireLowDamage()
+    {
+        return FIRE_LOW_DAMAGE_PROB;
+    }
+
+    public int getFireHighCasualty()
+    {
+        return FIRE_HIGH_CASUALTY_PROB;
+    }
+
+    public int getFireHighDamage()
+    {
+        return FIRE_HIGH_DAMAGE_PROB;
+    }
+
+    public int getCount()
+    {
+        return count;
+    }
+
+    public void setCount(int newCount)
+    {
+        count = newCount;
+    }
+
+    public boolean getResponse()
+    {
+        return response;
+    }
+
+    public void incrementCasualty()
+    {
+        casualtyCount = casualtyCount + 1;
+    }
+
+    public void incrementDamage()
+    {
+        damageCount = damageCount + 1;
+    }
+
+    public int getCasualtyCount()
+    {
+        return casualtyCount;
+    }
+
+    public int getDamageCount()
+    {
+        return damageCount;
     }
 }
