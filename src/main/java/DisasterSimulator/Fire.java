@@ -24,7 +24,7 @@ public class Fire implements Emergency
     public Fire()
     {
         logger.info("Initialize the state of the fire to LowIntensity");
-        state = new LowIntensity();
+        setState(new LowIntensity());
     }
 
     @Override

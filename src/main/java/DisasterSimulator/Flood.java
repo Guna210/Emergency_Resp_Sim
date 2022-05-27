@@ -18,7 +18,7 @@ public class Flood implements Emergency
     public Flood()
     {
         logger.info("Initialize the state of flood to Start");
-        state = new Start();
+        setState(new Start());
     }
 
     @Override

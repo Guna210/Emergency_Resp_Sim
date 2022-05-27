@@ -7,27 +7,39 @@ import java.util.logging.*;
 public class DisasterSimulatorApp
 {
     private static final Logger logger = Logger.getLogger(DisasterSimulatorApp.class.getName());
+    private static boolean name = false;
 
     public static void main(String[] args)
     {
-        String fileName;
+        String fileName = " ";
+        try
+        {
+            fileName = args[0];
+            name = true;
+        }
+        catch(ArrayIndexOutOfBoundsException e)
+        {
+            logger.info("No file name was provided by the user as a command line argument");
+            System.out.println("No file name provided!");
+        }
+
         List<String> list = new ArrayList<>();
         Map<String, Emergency> emergencies = new HashMap<>();
         int count = 0;
         Creator creator = new Creator();
         
-        System.out.print("Enter the file name: ");
-
-        try(Scanner sc = new Scanner(System.in)) 
+        if(name)
         {
-            fileName = sc.nextLine();
-            list = readFile(fileName);
-            emergencies = emergencyCreator(list);
-            creator.eventCreator(emergencies);
-        } 
-        catch(DisasterSimulatorException e) 
-        {
-            System.out.println(e.getMessage());
+            try
+            {
+                list = readFile(fileName);
+                emergencies = emergencyCreator(list);
+                creator.eventCreator(emergencies);
+            } 
+            catch(DisasterSimulatorException e) 
+            {
+                System.out.println(e.getMessage());
+            }
         }
     }
 

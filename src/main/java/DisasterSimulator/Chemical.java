@@ -18,7 +18,7 @@ public class Chemical implements Emergency
     public Chemical()
     {
         logger.info("Initialize the state of chemical to Start");
-        state = new Start();
+        setState(new Start());
     }
 
     @Override

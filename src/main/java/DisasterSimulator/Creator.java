@@ -12,7 +12,7 @@ public class Creator
     private List<String> responseList = new ArrayList<>();
     private int count = 0;
     
-    public void eventCreator(Map<String, Emergency> map)
+    public void eventCreator(Map<String, Emergency> map) throws DisasterSimulatorException
     {
         emergencyMap = map;
         ResponderComm resCom = new ResponderCommImpl();
@@ -66,7 +66,7 @@ public class Creator
             }
             catch(InterruptedException e)
             {
-                System.out.println(e.getMessage());
+                throw new DisasterSimulatorException("Unable to sleep thread!", e);
             }
         }
     }
