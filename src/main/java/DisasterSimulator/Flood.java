@@ -1,12 +1,13 @@
 package edu.curtin.DisasterSimulator;
 
-import java.util.*;
+import java.util.logging.*;
 
 public class Flood implements Emergency
 {
     private static final int FLOOD_END_TIME = 15;
     private static final int FLOOD_DAMAGE_PROB = 30;
     private static final int FLOOD_CASUALTY_PROB = 20;
+    private final Logger logger = Logger.getLogger(Flood.class.getName());
     private EmergencyState state;
     private String location = " ";
     private int startTime = 0;
@@ -16,9 +17,10 @@ public class Flood implements Emergency
 
     public Flood()
     {
+        logger.info("Initialize the state of flood to Start");
         state = new Start();
     }
-    
+
     @Override
     public void setState(EmergencyState newState)
     {
@@ -61,6 +63,7 @@ public class Flood implements Emergency
     public void initiate(ResponderComm resCom)
     {
         rComm = resCom;
+        logger.info(() -> "Inform responders that a flood started at "+location);
         rComm.send("flood start "+location);
     }
 
@@ -81,6 +84,7 @@ public class Flood implements Emergency
     public void update()
     {
         changeInState();
+        logger.info(() -> "Increment the count of flood at "+location+" by one");
         count = count + 1;
     }
 

@@ -2,9 +2,12 @@ package edu.curtin.DisasterSimulator;
 
 import java.util.*;
 import java.io.*;
+import java.util.logging.*;
 
 public class DisasterSimulatorApp
 {
+    private static final Logger logger = Logger.getLogger(DisasterSimulatorApp.class.getName());
+
     public static void main(String[] args)
     {
         String fileName;
@@ -20,7 +23,7 @@ public class DisasterSimulatorApp
             fileName = sc.nextLine();
             list = readFile(fileName);
             emergencies = emergencyCreator(list);
-            creator.eventCreator(list, emergencies);
+            creator.eventCreator(emergencies);
         } 
         catch(DisasterSimulatorException e) 
         {
@@ -45,6 +48,8 @@ public class DisasterSimulatorApp
         {
             throw new DisasterSimulatorException("File not found", e);
         }
+
+        logger.info("Input File Completly read");
         return list;
     }
 
@@ -71,6 +76,7 @@ public class DisasterSimulatorApp
                 emg.setLocation(splitLine[2]);
                 if(emergencies.get(key) == null)
                 {
+                    logger.info("Added a fire emergency");
                     emergencies.put(key, emg);
                 }
             }
@@ -91,6 +97,7 @@ public class DisasterSimulatorApp
                 emg.setLocation(splitLine[2]);
                 if(emergencies.get(key) == null)
                 {
+                    logger.info("Added a flood emergency");
                     emergencies.put(key, emg);
                 }
             }
@@ -111,6 +118,7 @@ public class DisasterSimulatorApp
                 emg.setLocation(splitLine[2]);
                 if(emergencies.get(key) == null)
                 {
+                    logger.info("Added a chemical emergency");
                     emergencies.put(key, emg);
                 }
             }

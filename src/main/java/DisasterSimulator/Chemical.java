@@ -1,12 +1,13 @@
 package edu.curtin.DisasterSimulator;
 
-import java.util.*;
+import java.util.logging.*;
 
 public class Chemical implements Emergency
 {
     private static final int CHEM_CLEANUP_TIME = 10;
     private static final int CHEM_CASUAL_PROB = 20;
     private static final int CHEM_CONTAM_PROB = 25;
+    private final Logger logger = Logger.getLogger(Chemical.class.getName());
     private EmergencyState state;
     private String location = " ";
     private int startTime = 0;
@@ -16,9 +17,10 @@ public class Chemical implements Emergency
 
     public Chemical()
     {
+        logger.info("Initialize the state of chemical to Start");
         state = new Start();
     }
-    
+
     @Override
     public void setState(EmergencyState newState)
     {
@@ -61,6 +63,7 @@ public class Chemical implements Emergency
     public void initiate(ResponderComm resCom)
     {
         rComm = resCom;
+        logger.info(() -> "Inform responders that a chemical started at "+location);
         rComm.send("chemical start "+location);
     }
 
@@ -83,6 +86,7 @@ public class Chemical implements Emergency
         changeInState();
         if(response)
         {
+            logger.info(() -> "Increment the cleanCount of chemical at "+location+" by one");
             cleanCount = cleanCount + 1;
         }
         if(!response)

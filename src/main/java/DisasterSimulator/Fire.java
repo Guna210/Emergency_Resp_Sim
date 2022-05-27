@@ -1,6 +1,6 @@
 package edu.curtin.DisasterSimulator;
 
-import java.util.*;
+import java.util.logging.*;
 
 public class Fire implements Emergency
 {
@@ -11,6 +11,7 @@ public class Fire implements Emergency
     private static final int FIRE_LOW_DAMAGE_PROB = 20;
     private static final int FIRE_HIGH_CASUALTY_PROB = 30;
     private static final int FIRE_HIGH_DAMAGE_PROB = 40;
+    private final Logger logger = Logger.getLogger(Fire.class.getName());
     private EmergencyState state;
     private String location = " ";
     private int startTime = 0;
@@ -22,6 +23,7 @@ public class Fire implements Emergency
 
     public Fire()
     {
+        logger.info("Initialize the state of the fire to LowIntensity");
         state = new LowIntensity();
     }
 
@@ -67,6 +69,7 @@ public class Fire implements Emergency
     public void initiate(ResponderComm resCom)
     {
         rComm = resCom;
+        logger.info(() -> "Inform responders that a fire started at "+location);
         rComm.send("fire start "+location);
     }
 
@@ -87,6 +90,7 @@ public class Fire implements Emergency
     public void update()
     {
         changeInState();
+        logger.info(() -> "Increment the count of fire at "+location+" by one");
         count = count + 1;
     }
     

@@ -1,19 +1,19 @@
 package edu.curtin.DisasterSimulator;
 
 import java.util.*;
+import java.util.logging.*;
 
 public class Creator
 {
-    private List<String> eventList = new ArrayList<>();
+    private final Logger logger = Logger.getLogger(Creator.class.getName());
     private Map<String, Emergency> emergencyMap = new HashMap<>();
     private Map<String, Emergency> activeMap = new HashMap<>();
     private List<String> removeList = new ArrayList<>();
     private List<String> responseList = new ArrayList<>();
     private int count = 0;
     
-    public void eventCreator(List<String> list, Map<String, Emergency> map)
+    public void eventCreator(Map<String, Emergency> map)
     {
-        eventList = list;
         emergencyMap = map;
         ResponderComm resCom = new ResponderCommImpl();
         boolean end = false;
@@ -26,14 +26,17 @@ public class Creator
                 {
                     Emergency emg = emergencyMap.get(key);
                     emg.initiate(resCom);
+                    logger.info("Add the started emergencies to the observers list");
                     activeMap.put(key, emg);
                 }
             }
+            logger.info("Get the reply from the responders");
             responseList = resCom.poll();
             if(!responseList.isEmpty())
             {
                 if(responseList.get(0).equals("end"))
                 {
+                    logger.info("End the simulation according to the reply from responders");
                     end = true;
                     break;
                 }
@@ -70,6 +73,7 @@ public class Creator
 
     public void notifyObservers()
     {
+        logger.info("Notify all the observers in the activeList that a second had passed.");
         for(String key : activeMap.keySet())
         {
             String reply = " ";

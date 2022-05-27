@@ -1,9 +1,11 @@
 package edu.curtin.DisasterSimulator;
 
 import java.util.*;
+import java.util.logging.*;
 
 public class HighIntensity implements EmergencyState
 {
+    private final Logger logger = Logger.getLogger(HighIntensity.class.getName());
     private int cleanCount = 0;
     
     @Override
@@ -12,6 +14,7 @@ public class HighIntensity implements EmergencyState
         Fire fire = (Fire)emergency;
         if(cleanCount == fire.getFireHighLow())
         {
+            logger.info(() -> "Fire at "+fire.getLocation()+" has been reduced to LowIntensity");
             fire.setState(new LowIntensity());
             fire.setCount(0);
         }
@@ -19,11 +22,13 @@ public class HighIntensity implements EmergencyState
         {
             if(numberGenerator(100) < fire.getFireHighCasualty())
             {
+                logger.info(() -> "Casualty occured at "+fire.getLocation()+" due to fire");
                 fire.incrementCasualty();
                 resCom.send("fire casualty "+fire.getCasualtyCount()+" "+fire.getLocation());
             }
             if(numberGenerator(100) < fire.getFireHighDamage())
             {
+                logger.info(() -> "Damage occured at "+fire.getLocation()+" due to fire");
                 fire.incrementDamage();
                 resCom.send("fire damage "+fire.getDamageCount()+" "+fire.getLocation());
             }
