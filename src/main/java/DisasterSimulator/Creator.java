@@ -70,19 +70,6 @@ public class Creator
 
     public void notifyObservers()
     {
-        // for(String s : responseList)
-        // {
-        //     String[] splitLine = s.split(" ",3);
-        //     if(splitLine.length >= 3)
-        //     {
-        //         String reply = splitLine[0]+splitLine[2];
-        //         if(activeMap.get(reply) != null)
-        //         {
-        //             Emergency emg = activeMap.get(reply);
-        //             emg.respond(splitLine[1]);
-        //         }
-        //     }
-        // }
         for(String key : activeMap.keySet())
         {
             String reply = " ";

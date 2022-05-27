@@ -14,6 +14,11 @@ public class Flood implements Emergency
     private boolean response = false;
     private int count = 0;
 
+    public Flood()
+    {
+        state = new Start();
+    }
+    
     @Override
     public void setState(EmergencyState newState)
     {

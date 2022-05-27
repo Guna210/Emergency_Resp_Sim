@@ -20,6 +20,11 @@ public class Fire implements Emergency
     private int casualtyCount = 0;
     private int damageCount = 0;
 
+    public Fire()
+    {
+        state = new LowIntensity();
+    }
+
     @Override
     public void setState(EmergencyState newState)
     {

@@ -5,7 +5,6 @@ import java.io.*;
 
 public class DisasterSimulatorApp
 {
-    private static int max = 0;
     public static void main(String[] args)
     {
         String fileName;
@@ -21,12 +20,12 @@ public class DisasterSimulatorApp
             fileName = sc.nextLine();
             list = readFile(fileName);
             emergencies = emergencyCreator(list);
+            creator.eventCreator(list, emergencies);
         } 
         catch(DisasterSimulatorException e) 
         {
             System.out.println(e.getMessage());
         }
-        creator.eventCreator(list, emergencies);
     }
 
     public static List<String> readFile(String fileName) throws DisasterSimulatorException
@@ -39,12 +38,6 @@ public class DisasterSimulatorApp
             while(sc.hasNextLine())
             {
                 line = sc.nextLine();
-                String[] splitLine = line.split(" ", 3);
-                int temp = Integer.parseInt(splitLine[0]);
-                if(temp > max)
-                {
-                    max = temp;
-                }
                 list.add(line);
             }
         }
@@ -52,11 +45,10 @@ public class DisasterSimulatorApp
         {
             throw new DisasterSimulatorException("File not found", e);
         }
-       
         return list;
     }
 
-    public static Map<String, Emergency> emergencyCreator(List<String> list)
+    public static Map<String, Emergency> emergencyCreator(List<String> list) throws DisasterSimulatorException
     {
         Map<String, Emergency> emergencies = new HashMap<>();
         for (String s : list)
@@ -64,39 +56,63 @@ public class DisasterSimulatorApp
             String[] splitLine = s.split(" ",3);
             if(splitLine[1].equals("fire"))
             {
-                int startTime = Integer.parseInt(splitLine[0]);
+                int startTime = 0;
+                try
+                {
+                    startTime = Integer.parseInt(splitLine[0]);
+                }
+                catch(NumberFormatException e)
+                {
+                    throw new DisasterSimulatorException("Invalid Input Structure!", e);
+                }
                 String key = splitLine[1]+splitLine[2];
                 Emergency emg = new Fire();
-                EmergencyState emgState = new LowIntensity();
-                emg.setState(emgState);
-                // emg.setPreviousState(emgState);
                 emg.setStartTime(startTime);
                 emg.setLocation(splitLine[2]);
-                emergencies.put(key, emg);
+                if(emergencies.get(key) == null)
+                {
+                    emergencies.put(key, emg);
+                }
             }
             if(splitLine[1].equals("flood"))
             {
-                int startTime = Integer.parseInt(splitLine[0]);
+                int startTime = 0;
+                try
+                {
+                    startTime = Integer.parseInt(splitLine[0]);
+                }
+                catch(NumberFormatException e)
+                {
+                    throw new DisasterSimulatorException("Invalid Input Structure!", e);
+                }
                 String key = splitLine[1]+splitLine[2];
                 Emergency emg = new Flood();
-                EmergencyState emgState = new Start();
-                emg.setState(emgState);
-                // emg.setPreviousState(emgState);
                 emg.setStartTime(startTime);
                 emg.setLocation(splitLine[2]);
-                emergencies.put(key, emg);
+                if(emergencies.get(key) == null)
+                {
+                    emergencies.put(key, emg);
+                }
             }
             if(splitLine[1].equals("chemical"))
             {
-                int startTime = Integer.parseInt(splitLine[0]);
+                int startTime = 0;
+                try
+                {
+                    startTime = Integer.parseInt(splitLine[0]);
+                }
+                catch(NumberFormatException e)
+                {
+                    throw new DisasterSimulatorException("Invalid Input Structure!", e);
+                }
                 String key = splitLine[1]+splitLine[2];
                 Emergency emg = new Chemical();
-                EmergencyState emgState = new Start();
-                emg.setState(emgState);
-                // emg.setPreviousState(emgState);
                 emg.setStartTime(startTime);
                 emg.setLocation(splitLine[2]);
-                emergencies.put(key, emg);
+                if(emergencies.get(key) == null)
+                {
+                    emergencies.put(key, emg);
+                }
             }
         }
         return emergencies;

@@ -14,6 +14,11 @@ public class Chemical implements Emergency
     private boolean response = false;
     private int cleanCount = 0;
 
+    public Chemical()
+    {
+        state = new Start();
+    }
+    
     @Override
     public void setState(EmergencyState newState)
     {
