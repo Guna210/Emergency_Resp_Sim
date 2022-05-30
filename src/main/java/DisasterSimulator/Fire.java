@@ -23,6 +23,7 @@ public class Fire implements Emergency
 
     public Fire()
     {
+        // Initialize the state of flood to LowIntensity
         logger.info("Initialize the state of the fire to LowIntensity");
         setState(new LowIntensity());
     }
@@ -68,6 +69,7 @@ public class Fire implements Emergency
     @Override
     public void initiate(ResponderComm resCom)
     {
+        // Let the responders know that a fire has started at a specific location
         rComm = resCom;
         logger.info(() -> "Inform responders that a fire started at "+location);
         rComm.send("fire start "+location);
@@ -76,6 +78,7 @@ public class Fire implements Emergency
     @Override
     public void respond(String res)
     {
+        // Check whether responders have arrived or left to a specific location.
         if(res.equals("+"))
         {
             response = true;
@@ -89,6 +92,7 @@ public class Fire implements Emergency
     @Override
     public void update()
     {
+        // Increment the count of fire by one.
         changeInState();
         logger.info(() -> "Increment the count of fire at "+location+" by one");
         count = count + 1;
@@ -151,11 +155,13 @@ public class Fire implements Emergency
 
     public void incrementCasualty()
     {
+        // Keep track of the number of casualties caused by a fire in both low and high intensities.
         casualtyCount = casualtyCount + 1;
     }
 
     public void incrementDamage()
     {
+        // Keep track of the number of damages caused by a fire in both low and high intensities.
         damageCount = damageCount + 1;
     }
 

@@ -17,6 +17,7 @@ public class Chemical implements Emergency
 
     public Chemical()
     {
+        // Initialize the state of chemical emergency to start
         logger.info("Initialize the state of chemical to Start");
         setState(new Start());
     }
@@ -62,6 +63,7 @@ public class Chemical implements Emergency
     @Override
     public void initiate(ResponderComm resCom)
     {
+        // Let the responders know that a chemical emergency has started at a specific location
         rComm = resCom;
         logger.info(() -> "Inform responders that a chemical started at "+location);
         rComm.send("chemical start "+location);
@@ -70,6 +72,7 @@ public class Chemical implements Emergency
     @Override
     public void respond(String res)
     {
+        // Check whether responders have arrived or left to a specific location.
         if(res.equals("+"))
         {
             response = true;
@@ -86,11 +89,14 @@ public class Chemical implements Emergency
         changeInState();
         if(response)
         {
+            // Increment the cleanCount if responders are present
             logger.info(() -> "Increment the cleanCount of chemical at "+location+" by one");
             cleanCount = cleanCount + 1;
         }
         if(!response)
         {
+            // If responders are absent, the cleanCount is changed to zero so that new responders
+            // will start from the begining.
             cleanCount = 0;
         }
     }

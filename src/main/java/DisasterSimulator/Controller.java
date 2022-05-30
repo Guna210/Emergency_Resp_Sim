@@ -12,6 +12,10 @@ public class Controller
     private List<String> responseList = new ArrayList<>();
     private int count = 0;
     
+    /********************************************************************************************************
+     * Hold the control logic of the simulation. Maintains a while loop that increments by one every        *
+     * second to keep tarck of time.                                                                        *
+     ********************************************************************************************************/
     public void control(ResponderComm rComm, Map<String, Emergency> map) throws DisasterSimulatorException
     {
         emergencyMap = map;
@@ -19,6 +23,8 @@ public class Controller
         boolean end = false;
         while(!end)
         {
+            // If the start time of an emergency is equal to the count of the while loop, add that emergency
+            // to the active list and send a message to the responders.
             for(String key : emergencyMap.keySet())
             {
                 int startTime = emergencyMap.get(key).getStartTime();
@@ -30,6 +36,7 @@ public class Controller
                     activeMap.put(key, emg);
                 }
             }
+            // Check if the reply from responders is to end the simulation.
             logger.info("Get the reply from the responders");
             responseList = resCom.poll();
             if(!responseList.isEmpty())
@@ -41,6 +48,7 @@ public class Controller
                     break;
                 }
             }
+            // According to the reply of the responders, inform the emergencies whether responders have arrived or not.
             for(String s : responseList)
             {
                 String[] splitLine = s.split(" ",3);
@@ -55,11 +63,13 @@ public class Controller
                 }
             }
             notifyObservers();
+            // Remove the emergencies that ended from the active list
             for(String key : removeList)
             {
                 activeMap.remove(key);
             }
             count = count + 1;
+            // Sleep the thread for one second to simulate the passage of time.
             try
             {
                 Thread.sleep(1000);
@@ -71,6 +81,10 @@ public class Controller
         }
     }
 
+    /****************************************************************************************************************
+     * Inform all the emergencies on the active list that a second had passed and that they should increment        *
+     * their count by one and put the emergencies that ended on that second to the remove list     .                *
+     ****************************************************************************************************************/
     public void notifyObservers()
     {
         logger.info("Notify all the observers in the activeList that a second had passed.");

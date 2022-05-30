@@ -17,6 +17,7 @@ public class Flood implements Emergency
 
     public Flood()
     {
+        // Initiate the state of the flood to start
         logger.info("Initialize the state of flood to Start");
         setState(new Start());
     }
@@ -62,6 +63,7 @@ public class Flood implements Emergency
     @Override
     public void initiate(ResponderComm resCom)
     {
+        // Let the responder know that a flood had started at a specific location.
         rComm = resCom;
         logger.info(() -> "Inform responders that a flood started at "+location);
         rComm.send("flood start "+location);
@@ -70,6 +72,7 @@ public class Flood implements Emergency
     @Override
     public void respond(String res)
     {
+        // Check whether responders have arrived or left to a specific location.
         if(res.equals("+"))
         {
             response = true;
@@ -83,6 +86,7 @@ public class Flood implements Emergency
     @Override
     public void update()
     {
+        // Increment the count of the flood by one
         changeInState();
         logger.info(() -> "Increment the count of flood at "+location+" by one");
         count = count + 1;
