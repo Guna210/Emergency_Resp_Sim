@@ -2,7 +2,6 @@ package edu.curtin.DisasterSimulator;
 
 public class End implements EmergencyState
 {
-
     @Override
     public void changeInState(Emergency emergency, ResponderComm resCom)
     {

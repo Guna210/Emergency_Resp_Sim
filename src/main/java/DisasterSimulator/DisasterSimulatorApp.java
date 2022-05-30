@@ -3,9 +3,11 @@ package edu.curtin.DisasterSimulator;
 import java.util.*;
 import java.io.*;
 import java.util.logging.*;
+import java.util.regex.*;
 
 public class DisasterSimulatorApp
 {
+    private static final Pattern INPUT_PATTERN =Pattern.compile("([0-9]+ (fire|flood|chemical) .+)"); 
     private static final Logger logger = Logger.getLogger(DisasterSimulatorApp.class.getName());
     private static boolean name = false;
 
@@ -26,7 +28,8 @@ public class DisasterSimulatorApp
         List<String> list = new ArrayList<>();
         Map<String, Emergency> emergencies = new HashMap<>();
         int count = 0;
-        Creator creator = new Creator();
+        Controller controller = new Controller();
+        ResponderComm rComm = new ResponderCommImpl();
         
         if(name)
         {
@@ -34,7 +37,7 @@ public class DisasterSimulatorApp
             {
                 list = readFile(fileName);
                 emergencies = emergencyCreator(list);
-                creator.eventCreator(emergencies);
+                controller.control(rComm, emergencies);
             } 
             catch(DisasterSimulatorException e) 
             {
@@ -58,6 +61,7 @@ public class DisasterSimulatorApp
         }
         catch(IOException e)
         {
+            logger.info("Unable to open input file");
             throw new DisasterSimulatorException("File not found", e);
         }
 
@@ -70,69 +74,54 @@ public class DisasterSimulatorApp
         Map<String, Emergency> emergencies = new HashMap<>();
         for (String s : list)
         {
-            String[] splitLine = s.split(" ",3);
-            if(splitLine[1].equals("fire"))
+            Matcher matcher = INPUT_PATTERN.matcher(s);
+            if(matcher.matches())
             {
-                int startTime = 0;
-                try
+                String[] splitLine = s.split(" ",3);
+                if(splitLine[1].equals("fire"))
                 {
-                    startTime = Integer.parseInt(splitLine[0]);
+                    int startTime = Integer.parseInt(splitLine[0]);
+                    String key = splitLine[1]+splitLine[2];
+                    Emergency emg = new Fire();
+                    emg.setStartTime(startTime);
+                    emg.setLocation(splitLine[2]);
+                    if(emergencies.get(key) == null)
+                    {
+                        logger.info("Added a fire emergency");
+                        emergencies.put(key, emg);
+                    }
                 }
-                catch(NumberFormatException e)
+                if(splitLine[1].equals("flood"))
                 {
-                    throw new DisasterSimulatorException("Invalid Input Structure!", e);
+                    int startTime = Integer.parseInt(splitLine[0]);
+                    String key = splitLine[1]+splitLine[2];
+                    Emergency emg = new Flood();
+                    emg.setStartTime(startTime);
+                    emg.setLocation(splitLine[2]);
+                    if(emergencies.get(key) == null)
+                    {
+                        logger.info("Added a flood emergency");
+                        emergencies.put(key, emg);
+                    }
                 }
-                String key = splitLine[1]+splitLine[2];
-                Emergency emg = new Fire();
-                emg.setStartTime(startTime);
-                emg.setLocation(splitLine[2]);
-                if(emergencies.get(key) == null)
+                if(splitLine[1].equals("chemical"))
                 {
-                    logger.info("Added a fire emergency");
-                    emergencies.put(key, emg);
+                    int startTime = Integer.parseInt(splitLine[0]);
+                    String key = splitLine[1]+splitLine[2];
+                    Emergency emg = new Chemical();
+                    emg.setStartTime(startTime);
+                    emg.setLocation(splitLine[2]);
+                    if(emergencies.get(key) == null)
+                    {
+                        logger.info("Added a chemical emergency");
+                        emergencies.put(key, emg);
+                    }
                 }
             }
-            if(splitLine[1].equals("flood"))
+            else
             {
-                int startTime = 0;
-                try
-                {
-                    startTime = Integer.parseInt(splitLine[0]);
-                }
-                catch(NumberFormatException e)
-                {
-                    throw new DisasterSimulatorException("Invalid Input Structure!", e);
-                }
-                String key = splitLine[1]+splitLine[2];
-                Emergency emg = new Flood();
-                emg.setStartTime(startTime);
-                emg.setLocation(splitLine[2]);
-                if(emergencies.get(key) == null)
-                {
-                    logger.info("Added a flood emergency");
-                    emergencies.put(key, emg);
-                }
-            }
-            if(splitLine[1].equals("chemical"))
-            {
-                int startTime = 0;
-                try
-                {
-                    startTime = Integer.parseInt(splitLine[0]);
-                }
-                catch(NumberFormatException e)
-                {
-                    throw new DisasterSimulatorException("Invalid Input Structure!", e);
-                }
-                String key = splitLine[1]+splitLine[2];
-                Emergency emg = new Chemical();
-                emg.setStartTime(startTime);
-                emg.setLocation(splitLine[2]);
-                if(emergencies.get(key) == null)
-                {
-                    logger.info("Added a chemical emergency");
-                    emergencies.put(key, emg);
-                }
+                logger.info("Invalid input file provided");
+                throw new DisasterSimulatorException("Invalid Input File!");
             }
         }
         return emergencies;

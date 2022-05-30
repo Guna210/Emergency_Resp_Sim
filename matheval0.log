@@ -1,470 +1,460 @@
-May 28, 2022 12:26:51 AM edu.curtin.DisasterSimulator.DisasterSimulatorApp readFile
+May 30, 2022 8:53:51 PM edu.curtin.DisasterSimulator.DisasterSimulatorApp readFile
 INFO: Input File Completly read
-May 28, 2022 12:26:51 AM edu.curtin.DisasterSimulator.Flood <init>
+May 30, 2022 8:53:51 PM edu.curtin.DisasterSimulator.Flood <init>
 INFO: Initialize the state of flood to Start
-May 28, 2022 12:26:51 AM edu.curtin.DisasterSimulator.DisasterSimulatorApp emergencyCreator
+May 30, 2022 8:53:51 PM edu.curtin.DisasterSimulator.DisasterSimulatorApp emergencyCreator
 INFO: Added a flood emergency
-May 28, 2022 12:26:51 AM edu.curtin.DisasterSimulator.Fire <init>
+May 30, 2022 8:53:51 PM edu.curtin.DisasterSimulator.Fire <init>
 INFO: Initialize the state of the fire to LowIntensity
-May 28, 2022 12:26:51 AM edu.curtin.DisasterSimulator.DisasterSimulatorApp emergencyCreator
+May 30, 2022 8:53:51 PM edu.curtin.DisasterSimulator.DisasterSimulatorApp emergencyCreator
 INFO: Added a fire emergency
-May 28, 2022 12:26:51 AM edu.curtin.DisasterSimulator.Fire <init>
+May 30, 2022 8:53:51 PM edu.curtin.DisasterSimulator.Fire <init>
 INFO: Initialize the state of the fire to LowIntensity
-May 28, 2022 12:26:51 AM edu.curtin.DisasterSimulator.DisasterSimulatorApp emergencyCreator
+May 30, 2022 8:53:51 PM edu.curtin.DisasterSimulator.DisasterSimulatorApp emergencyCreator
 INFO: Added a fire emergency
-May 28, 2022 12:26:51 AM edu.curtin.DisasterSimulator.Flood <init>
+May 30, 2022 8:53:51 PM edu.curtin.DisasterSimulator.Flood <init>
 INFO: Initialize the state of flood to Start
-May 28, 2022 12:26:51 AM edu.curtin.DisasterSimulator.DisasterSimulatorApp emergencyCreator
+May 30, 2022 8:53:51 PM edu.curtin.DisasterSimulator.DisasterSimulatorApp emergencyCreator
 INFO: Added a flood emergency
-May 28, 2022 12:26:51 AM edu.curtin.DisasterSimulator.Chemical <init>
+May 30, 2022 8:53:51 PM edu.curtin.DisasterSimulator.Chemical <init>
 INFO: Initialize the state of chemical to Start
-May 28, 2022 12:26:51 AM edu.curtin.DisasterSimulator.DisasterSimulatorApp emergencyCreator
+May 30, 2022 8:53:51 PM edu.curtin.DisasterSimulator.DisasterSimulatorApp emergencyCreator
 INFO: Added a chemical emergency
-May 28, 2022 12:26:51 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:53:51 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:26:51 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:53:51 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:26:52 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:53:52 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:26:52 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:53:52 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:26:53 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:53:53 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:26:53 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:53:53 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:26:54 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:53:54 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:26:54 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:53:54 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:26:55 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:53:55 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:26:55 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:53:55 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:26:56 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:53:56 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:26:56 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:53:56 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:26:57 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:53:57 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:26:57 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:53:57 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:26:58 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:53:59 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:26:58 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:53:59 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:26:59 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:00 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:26:59 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:00 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:00 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:01 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:00 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:01 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:01 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:02 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:01 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:02 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:02 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:03 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:02 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:03 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:03 AM edu.curtin.DisasterSimulator.Fire initiate
+May 30, 2022 8:54:04 PM edu.curtin.DisasterSimulator.Fire initiate
 INFO: Inform responders that a fire started at Hill Valley
-May 28, 2022 12:27:03 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:04 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Add the started emergencies to the observers list
-May 28, 2022 12:27:03 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:04 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:03 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:04 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:03 AM edu.curtin.DisasterSimulator.Fire update
-INFO: Increment the count of fire at Hill Valley by one
-May 28, 2022 12:27:04 AM edu.curtin.DisasterSimulator.Creator eventCreator
-INFO: Get the reply from the responders
-May 28, 2022 12:27:04 AM edu.curtin.DisasterSimulator.Creator notifyObservers
-INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:04 AM edu.curtin.DisasterSimulator.LowIntensity changeInState
+May 30, 2022 8:54:04 PM edu.curtin.DisasterSimulator.LowIntensity changeInState
 INFO: Damage occured at Hill Valley due to fire
-May 28, 2022 12:27:04 AM edu.curtin.DisasterSimulator.Fire update
+May 30, 2022 8:54:04 PM edu.curtin.DisasterSimulator.Fire update
 INFO: Increment the count of fire at Hill Valley by one
-May 28, 2022 12:27:05 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:05 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:05 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:05 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:05 AM edu.curtin.DisasterSimulator.Fire update
-INFO: Increment the count of fire at Hill Valley by one
-May 28, 2022 12:27:06 AM edu.curtin.DisasterSimulator.Creator eventCreator
-INFO: Get the reply from the responders
-May 28, 2022 12:27:06 AM edu.curtin.DisasterSimulator.Creator notifyObservers
-INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:06 AM edu.curtin.DisasterSimulator.LowIntensity changeInState
+May 30, 2022 8:54:05 PM edu.curtin.DisasterSimulator.LowIntensity changeInState
 INFO: Casualty occured at Hill Valley due to fire
-May 28, 2022 12:27:06 AM edu.curtin.DisasterSimulator.Fire update
+May 30, 2022 8:54:05 PM edu.curtin.DisasterSimulator.Fire update
 INFO: Increment the count of fire at Hill Valley by one
-May 28, 2022 12:27:07 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:06 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:07 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:06 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:07 AM edu.curtin.DisasterSimulator.LowIntensity changeInState
-INFO: Casualty occured at Hill Valley due to fire
-May 28, 2022 12:27:07 AM edu.curtin.DisasterSimulator.LowIntensity changeInState
+May 30, 2022 8:54:06 PM edu.curtin.DisasterSimulator.Fire update
+INFO: Increment the count of fire at Hill Valley by one
+May 30, 2022 8:54:07 PM edu.curtin.DisasterSimulator.Controller control
+INFO: Get the reply from the responders
+May 30, 2022 8:54:07 PM edu.curtin.DisasterSimulator.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+May 30, 2022 8:54:07 PM edu.curtin.DisasterSimulator.LowIntensity changeInState
 INFO: Damage occured at Hill Valley due to fire
-May 28, 2022 12:27:07 AM edu.curtin.DisasterSimulator.Fire update
+May 30, 2022 8:54:07 PM edu.curtin.DisasterSimulator.Fire update
 INFO: Increment the count of fire at Hill Valley by one
-May 28, 2022 12:27:08 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:08 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:08 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:08 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:08 AM edu.curtin.DisasterSimulator.Fire update
+May 30, 2022 8:54:08 PM edu.curtin.DisasterSimulator.Fire update
 INFO: Increment the count of fire at Hill Valley by one
-May 28, 2022 12:27:09 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:09 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:09 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:09 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:09 AM edu.curtin.DisasterSimulator.Fire update
+May 30, 2022 8:54:09 PM edu.curtin.DisasterSimulator.Fire update
 INFO: Increment the count of fire at Hill Valley by one
-May 28, 2022 12:27:10 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:10 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:10 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:10 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:10 AM edu.curtin.DisasterSimulator.LowIntensity changeInState
+May 30, 2022 8:54:10 PM edu.curtin.DisasterSimulator.LowIntensity changeInState
+INFO: Damage occured at Hill Valley due to fire
+May 30, 2022 8:54:10 PM edu.curtin.DisasterSimulator.Fire update
+INFO: Increment the count of fire at Hill Valley by one
+May 30, 2022 8:54:11 PM edu.curtin.DisasterSimulator.Controller control
+INFO: Get the reply from the responders
+May 30, 2022 8:54:11 PM edu.curtin.DisasterSimulator.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+May 30, 2022 8:54:11 PM edu.curtin.DisasterSimulator.LowIntensity changeInState
 INFO: Fire at Hill Valley has been cleaned
-May 28, 2022 12:27:10 AM edu.curtin.DisasterSimulator.Fire update
+May 30, 2022 8:54:11 PM edu.curtin.DisasterSimulator.Fire update
 INFO: Increment the count of fire at Hill Valley by one
-May 28, 2022 12:27:11 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:12 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:11 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:12 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:12 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:13 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:12 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:13 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:13 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:14 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:13 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:14 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:14 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:15 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:14 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:15 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:15 AM edu.curtin.DisasterSimulator.Chemical initiate
+May 30, 2022 8:54:16 PM edu.curtin.DisasterSimulator.Chemical initiate
 INFO: Inform responders that a chemical started at Westtown
-May 28, 2022 12:27:15 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:16 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Add the started emergencies to the observers list
-May 28, 2022 12:27:15 AM edu.curtin.DisasterSimulator.Flood initiate
+May 30, 2022 8:54:16 PM edu.curtin.DisasterSimulator.Flood initiate
 INFO: Inform responders that a flood started at Midtown
-May 28, 2022 12:27:15 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:16 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Add the started emergencies to the observers list
-May 28, 2022 12:27:15 AM edu.curtin.DisasterSimulator.Flood initiate
+May 30, 2022 8:54:16 PM edu.curtin.DisasterSimulator.Flood initiate
 INFO: Inform responders that a flood started at Hill Valley
-May 28, 2022 12:27:15 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:16 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Add the started emergencies to the observers list
-May 28, 2022 12:27:15 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:16 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:15 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:16 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:15 AM edu.curtin.DisasterSimulator.Start changeInState
-INFO: Casualty occured at Midtown due to flood
-May 28, 2022 12:27:15 AM edu.curtin.DisasterSimulator.Flood update
-INFO: Increment the count of flood at Midtown by one
-May 28, 2022 12:27:15 AM edu.curtin.DisasterSimulator.Start changeInState
-INFO: Damage occured at Hill Valley due to flood
-May 28, 2022 12:27:15 AM edu.curtin.DisasterSimulator.Flood update
-INFO: Increment the count of flood at Hill Valley by one
-May 28, 2022 12:27:16 AM edu.curtin.DisasterSimulator.Creator eventCreator
-INFO: Get the reply from the responders
-May 28, 2022 12:27:16 AM edu.curtin.DisasterSimulator.Creator notifyObservers
-INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:16 AM edu.curtin.DisasterSimulator.Flood update
-INFO: Increment the count of flood at Midtown by one
-May 28, 2022 12:27:16 AM edu.curtin.DisasterSimulator.Flood update
-INFO: Increment the count of flood at Hill Valley by one
-May 28, 2022 12:27:17 AM edu.curtin.DisasterSimulator.Creator eventCreator
-INFO: Get the reply from the responders
-May 28, 2022 12:27:17 AM edu.curtin.DisasterSimulator.Creator notifyObservers
-INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:17 AM edu.curtin.DisasterSimulator.Flood update
-INFO: Increment the count of flood at Midtown by one
-May 28, 2022 12:27:17 AM edu.curtin.DisasterSimulator.Flood update
-INFO: Increment the count of flood at Hill Valley by one
-May 28, 2022 12:27:18 AM edu.curtin.DisasterSimulator.Creator eventCreator
-INFO: Get the reply from the responders
-May 28, 2022 12:27:18 AM edu.curtin.DisasterSimulator.Creator notifyObservers
-INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:18 AM edu.curtin.DisasterSimulator.Start changeInState
+May 30, 2022 8:54:16 PM edu.curtin.DisasterSimulator.Start changeInState
 INFO: Damage occured at Midtown due to flood
-May 28, 2022 12:27:18 AM edu.curtin.DisasterSimulator.Flood update
+May 30, 2022 8:54:16 PM edu.curtin.DisasterSimulator.Flood update
 INFO: Increment the count of flood at Midtown by one
-May 28, 2022 12:27:18 AM edu.curtin.DisasterSimulator.Flood update
+May 30, 2022 8:54:16 PM edu.curtin.DisasterSimulator.Flood update
 INFO: Increment the count of flood at Hill Valley by one
-May 28, 2022 12:27:19 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:17 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:19 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:17 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:19 AM edu.curtin.DisasterSimulator.Start changeInState
-INFO: Damage occured at Westtown due to chemical
-May 28, 2022 12:27:19 AM edu.curtin.DisasterSimulator.Start changeInState
-INFO: Damage occured at Midtown due to flood
-May 28, 2022 12:27:19 AM edu.curtin.DisasterSimulator.Flood update
+May 30, 2022 8:54:17 PM edu.curtin.DisasterSimulator.Flood update
 INFO: Increment the count of flood at Midtown by one
-May 28, 2022 12:27:19 AM edu.curtin.DisasterSimulator.Flood update
-INFO: Increment the count of flood at Hill Valley by one
-May 28, 2022 12:27:20 AM edu.curtin.DisasterSimulator.Creator eventCreator
-INFO: Get the reply from the responders
-May 28, 2022 12:27:20 AM edu.curtin.DisasterSimulator.Creator notifyObservers
-INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:20 AM edu.curtin.DisasterSimulator.Start changeInState
-INFO: Damage occured at Westtown due to chemical
-May 28, 2022 12:27:20 AM edu.curtin.DisasterSimulator.Start changeInState
-INFO: Damage occured at Midtown due to flood
-May 28, 2022 12:27:20 AM edu.curtin.DisasterSimulator.Flood update
-INFO: Increment the count of flood at Midtown by one
-May 28, 2022 12:27:20 AM edu.curtin.DisasterSimulator.Start changeInState
+May 30, 2022 8:54:17 PM edu.curtin.DisasterSimulator.Start changeInState
 INFO: Casualty occured at Hill Valley due to flood
-May 28, 2022 12:27:20 AM edu.curtin.DisasterSimulator.Start changeInState
-INFO: Damage occured at Hill Valley due to flood
-May 28, 2022 12:27:20 AM edu.curtin.DisasterSimulator.Flood update
+May 30, 2022 8:54:17 PM edu.curtin.DisasterSimulator.Flood update
 INFO: Increment the count of flood at Hill Valley by one
-May 28, 2022 12:27:21 AM edu.curtin.DisasterSimulator.Fire initiate
+May 30, 2022 8:54:18 PM edu.curtin.DisasterSimulator.Controller control
+INFO: Get the reply from the responders
+May 30, 2022 8:54:18 PM edu.curtin.DisasterSimulator.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+May 30, 2022 8:54:18 PM edu.curtin.DisasterSimulator.Flood update
+INFO: Increment the count of flood at Midtown by one
+May 30, 2022 8:54:18 PM edu.curtin.DisasterSimulator.Flood update
+INFO: Increment the count of flood at Hill Valley by one
+May 30, 2022 8:54:19 PM edu.curtin.DisasterSimulator.Controller control
+INFO: Get the reply from the responders
+May 30, 2022 8:54:19 PM edu.curtin.DisasterSimulator.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+May 30, 2022 8:54:19 PM edu.curtin.DisasterSimulator.Flood update
+INFO: Increment the count of flood at Midtown by one
+May 30, 2022 8:54:19 PM edu.curtin.DisasterSimulator.Start changeInState
+INFO: Casualty occured at Hill Valley due to flood
+May 30, 2022 8:54:19 PM edu.curtin.DisasterSimulator.Flood update
+INFO: Increment the count of flood at Hill Valley by one
+May 30, 2022 8:54:20 PM edu.curtin.DisasterSimulator.Controller control
+INFO: Get the reply from the responders
+May 30, 2022 8:54:20 PM edu.curtin.DisasterSimulator.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+May 30, 2022 8:54:20 PM edu.curtin.DisasterSimulator.Flood update
+INFO: Increment the count of flood at Midtown by one
+May 30, 2022 8:54:20 PM edu.curtin.DisasterSimulator.Start changeInState
+INFO: Casualty occured at Hill Valley due to flood
+May 30, 2022 8:54:20 PM edu.curtin.DisasterSimulator.Start changeInState
+INFO: Damage occured at Hill Valley due to flood
+May 30, 2022 8:54:20 PM edu.curtin.DisasterSimulator.Flood update
+INFO: Increment the count of flood at Hill Valley by one
+May 30, 2022 8:54:21 PM edu.curtin.DisasterSimulator.Controller control
+INFO: Get the reply from the responders
+May 30, 2022 8:54:21 PM edu.curtin.DisasterSimulator.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+May 30, 2022 8:54:21 PM edu.curtin.DisasterSimulator.Flood update
+INFO: Increment the count of flood at Midtown by one
+May 30, 2022 8:54:21 PM edu.curtin.DisasterSimulator.Flood update
+INFO: Increment the count of flood at Hill Valley by one
+May 30, 2022 8:54:22 PM edu.curtin.DisasterSimulator.Fire initiate
 INFO: Inform responders that a fire started at Midtown
-May 28, 2022 12:27:21 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:22 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Add the started emergencies to the observers list
-May 28, 2022 12:27:21 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:22 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:21 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:22 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:21 AM edu.curtin.DisasterSimulator.LowIntensity changeInState
+May 30, 2022 8:54:22 PM edu.curtin.DisasterSimulator.Fire update
+INFO: Increment the count of fire at Midtown by one
+May 30, 2022 8:54:22 PM edu.curtin.DisasterSimulator.Flood update
+INFO: Increment the count of flood at Midtown by one
+May 30, 2022 8:54:22 PM edu.curtin.DisasterSimulator.Flood update
+INFO: Increment the count of flood at Hill Valley by one
+May 30, 2022 8:54:23 PM edu.curtin.DisasterSimulator.Controller control
+INFO: Get the reply from the responders
+May 30, 2022 8:54:23 PM edu.curtin.DisasterSimulator.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+May 30, 2022 8:54:23 PM edu.curtin.DisasterSimulator.LowIntensity changeInState
 INFO: Casualty occured at Midtown due to fire
-May 28, 2022 12:27:21 AM edu.curtin.DisasterSimulator.LowIntensity changeInState
+May 30, 2022 8:54:23 PM edu.curtin.DisasterSimulator.LowIntensity changeInState
 INFO: Damage occured at Midtown due to fire
-May 28, 2022 12:27:21 AM edu.curtin.DisasterSimulator.Fire update
+May 30, 2022 8:54:23 PM edu.curtin.DisasterSimulator.Fire update
 INFO: Increment the count of fire at Midtown by one
-May 28, 2022 12:27:21 AM edu.curtin.DisasterSimulator.Start changeInState
-INFO: Casualty occured at Westtown due to chemical
-May 28, 2022 12:27:21 AM edu.curtin.DisasterSimulator.Start changeInState
-INFO: Damage occured at Westtown due to chemical
-May 28, 2022 12:27:21 AM edu.curtin.DisasterSimulator.Flood update
-INFO: Increment the count of flood at Midtown by one
-May 28, 2022 12:27:21 AM edu.curtin.DisasterSimulator.Flood update
-INFO: Increment the count of flood at Hill Valley by one
-May 28, 2022 12:27:22 AM edu.curtin.DisasterSimulator.Creator eventCreator
-INFO: Get the reply from the responders
-May 28, 2022 12:27:22 AM edu.curtin.DisasterSimulator.Creator notifyObservers
-INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:22 AM edu.curtin.DisasterSimulator.Fire update
-INFO: Increment the count of fire at Midtown by one
-May 28, 2022 12:27:22 AM edu.curtin.DisasterSimulator.Start changeInState
-INFO: Damage occured at Westtown due to chemical
-May 28, 2022 12:27:22 AM edu.curtin.DisasterSimulator.Flood update
-INFO: Increment the count of flood at Midtown by one
-May 28, 2022 12:27:22 AM edu.curtin.DisasterSimulator.Flood update
-INFO: Increment the count of flood at Hill Valley by one
-May 28, 2022 12:27:23 AM edu.curtin.DisasterSimulator.Creator eventCreator
-INFO: Get the reply from the responders
-May 28, 2022 12:27:23 AM edu.curtin.DisasterSimulator.Creator notifyObservers
-INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:23 AM edu.curtin.DisasterSimulator.Fire update
-INFO: Increment the count of fire at Midtown by one
-May 28, 2022 12:27:23 AM edu.curtin.DisasterSimulator.Start changeInState
-INFO: Damage occured at Midtown due to flood
-May 28, 2022 12:27:23 AM edu.curtin.DisasterSimulator.Flood update
-INFO: Increment the count of flood at Midtown by one
-May 28, 2022 12:27:23 AM edu.curtin.DisasterSimulator.Flood update
-INFO: Increment the count of flood at Hill Valley by one
-May 28, 2022 12:27:24 AM edu.curtin.DisasterSimulator.Creator eventCreator
-INFO: Get the reply from the responders
-May 28, 2022 12:27:24 AM edu.curtin.DisasterSimulator.Creator notifyObservers
-INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:24 AM edu.curtin.DisasterSimulator.LowIntensity changeInState
-INFO: Casualty occured at Midtown due to fire
-May 28, 2022 12:27:24 AM edu.curtin.DisasterSimulator.Fire update
-INFO: Increment the count of fire at Midtown by one
-May 28, 2022 12:27:24 AM edu.curtin.DisasterSimulator.Start changeInState
+May 30, 2022 8:54:23 PM edu.curtin.DisasterSimulator.Start changeInState
 INFO: Casualty occured at Midtown due to flood
-May 28, 2022 12:27:24 AM edu.curtin.DisasterSimulator.Start changeInState
-INFO: Damage occured at Midtown due to flood
-May 28, 2022 12:27:24 AM edu.curtin.DisasterSimulator.Flood update
+May 30, 2022 8:54:23 PM edu.curtin.DisasterSimulator.Flood update
 INFO: Increment the count of flood at Midtown by one
-May 28, 2022 12:27:24 AM edu.curtin.DisasterSimulator.Flood update
-INFO: Increment the count of flood at Hill Valley by one
-May 28, 2022 12:27:25 AM edu.curtin.DisasterSimulator.Creator eventCreator
-INFO: Get the reply from the responders
-May 28, 2022 12:27:25 AM edu.curtin.DisasterSimulator.Creator notifyObservers
-INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:25 AM edu.curtin.DisasterSimulator.Fire update
-INFO: Increment the count of fire at Midtown by one
-May 28, 2022 12:27:25 AM edu.curtin.DisasterSimulator.Start changeInState
-INFO: Casualty occured at Midtown due to flood
-May 28, 2022 12:27:25 AM edu.curtin.DisasterSimulator.Flood update
-INFO: Increment the count of flood at Midtown by one
-May 28, 2022 12:27:25 AM edu.curtin.DisasterSimulator.Flood update
-INFO: Increment the count of flood at Hill Valley by one
-May 28, 2022 12:27:26 AM edu.curtin.DisasterSimulator.Creator eventCreator
-INFO: Get the reply from the responders
-May 28, 2022 12:27:26 AM edu.curtin.DisasterSimulator.Creator notifyObservers
-INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:26 AM edu.curtin.DisasterSimulator.Fire update
-INFO: Increment the count of fire at Midtown by one
-May 28, 2022 12:27:26 AM edu.curtin.DisasterSimulator.Start changeInState
-INFO: Casualty occured at Westtown due to chemical
-May 28, 2022 12:27:26 AM edu.curtin.DisasterSimulator.Flood update
-INFO: Increment the count of flood at Midtown by one
-May 28, 2022 12:27:26 AM edu.curtin.DisasterSimulator.Start changeInState
+May 30, 2022 8:54:23 PM edu.curtin.DisasterSimulator.Start changeInState
 INFO: Casualty occured at Hill Valley due to flood
-May 28, 2022 12:27:26 AM edu.curtin.DisasterSimulator.Flood update
+May 30, 2022 8:54:23 PM edu.curtin.DisasterSimulator.Flood update
 INFO: Increment the count of flood at Hill Valley by one
-May 28, 2022 12:27:27 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:24 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:27 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:24 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:27 AM edu.curtin.DisasterSimulator.LowIntensity changeInState
-INFO: Fire at Midtown has been cleaned
-May 28, 2022 12:27:27 AM edu.curtin.DisasterSimulator.Fire update
+May 30, 2022 8:54:24 PM edu.curtin.DisasterSimulator.Fire update
 INFO: Increment the count of fire at Midtown by one
-May 28, 2022 12:27:27 AM edu.curtin.DisasterSimulator.Start changeInState
-INFO: Damage occured at Westtown due to chemical
-May 28, 2022 12:27:27 AM edu.curtin.DisasterSimulator.Start changeInState
+May 30, 2022 8:54:24 PM edu.curtin.DisasterSimulator.Start changeInState
 INFO: Casualty occured at Midtown due to flood
-May 28, 2022 12:27:27 AM edu.curtin.DisasterSimulator.Flood update
+May 30, 2022 8:54:24 PM edu.curtin.DisasterSimulator.Flood update
 INFO: Increment the count of flood at Midtown by one
-May 28, 2022 12:27:27 AM edu.curtin.DisasterSimulator.Flood update
+May 30, 2022 8:54:24 PM edu.curtin.DisasterSimulator.Flood update
 INFO: Increment the count of flood at Hill Valley by one
-May 28, 2022 12:27:28 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:25 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:28 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:25 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:28 AM edu.curtin.DisasterSimulator.Start changeInState
+May 30, 2022 8:54:25 PM edu.curtin.DisasterSimulator.LowIntensity changeInState
+INFO: Casualty occured at Midtown due to fire
+May 30, 2022 8:54:25 PM edu.curtin.DisasterSimulator.Fire update
+INFO: Increment the count of fire at Midtown by one
+May 30, 2022 8:54:25 PM edu.curtin.DisasterSimulator.Flood update
+INFO: Increment the count of flood at Midtown by one
+May 30, 2022 8:54:25 PM edu.curtin.DisasterSimulator.Start changeInState
+INFO: Casualty occured at Hill Valley due to flood
+May 30, 2022 8:54:25 PM edu.curtin.DisasterSimulator.Start changeInState
+INFO: Damage occured at Hill Valley due to flood
+May 30, 2022 8:54:25 PM edu.curtin.DisasterSimulator.Flood update
+INFO: Increment the count of flood at Hill Valley by one
+May 30, 2022 8:54:26 PM edu.curtin.DisasterSimulator.Controller control
+INFO: Get the reply from the responders
+May 30, 2022 8:54:26 PM edu.curtin.DisasterSimulator.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+May 30, 2022 8:54:26 PM edu.curtin.DisasterSimulator.Fire update
+INFO: Increment the count of fire at Midtown by one
+May 30, 2022 8:54:26 PM edu.curtin.DisasterSimulator.Start changeInState
 INFO: Casualty occured at Midtown due to flood
-May 28, 2022 12:27:28 AM edu.curtin.DisasterSimulator.Start changeInState
+May 30, 2022 8:54:26 PM edu.curtin.DisasterSimulator.Start changeInState
 INFO: Damage occured at Midtown due to flood
-May 28, 2022 12:27:28 AM edu.curtin.DisasterSimulator.Flood update
+May 30, 2022 8:54:26 PM edu.curtin.DisasterSimulator.Flood update
 INFO: Increment the count of flood at Midtown by one
-May 28, 2022 12:27:28 AM edu.curtin.DisasterSimulator.Flood update
+May 30, 2022 8:54:26 PM edu.curtin.DisasterSimulator.Flood update
 INFO: Increment the count of flood at Hill Valley by one
-May 28, 2022 12:27:29 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:27 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:29 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:27 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:29 AM edu.curtin.DisasterSimulator.Flood update
+May 30, 2022 8:54:27 PM edu.curtin.DisasterSimulator.LowIntensity changeInState
+INFO: Casualty occured at Midtown due to fire
+May 30, 2022 8:54:27 PM edu.curtin.DisasterSimulator.Fire update
+INFO: Increment the count of fire at Midtown by one
+May 30, 2022 8:54:27 PM edu.curtin.DisasterSimulator.Start changeInState
+INFO: Damage occured at Westtown due to chemical
+May 30, 2022 8:54:27 PM edu.curtin.DisasterSimulator.Flood update
 INFO: Increment the count of flood at Midtown by one
-May 28, 2022 12:27:29 AM edu.curtin.DisasterSimulator.Flood update
+May 30, 2022 8:54:27 PM edu.curtin.DisasterSimulator.Start changeInState
+INFO: Casualty occured at Hill Valley due to flood
+May 30, 2022 8:54:27 PM edu.curtin.DisasterSimulator.Start changeInState
+INFO: Damage occured at Hill Valley due to flood
+May 30, 2022 8:54:27 PM edu.curtin.DisasterSimulator.Flood update
 INFO: Increment the count of flood at Hill Valley by one
-May 28, 2022 12:27:30 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:28 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:30 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:28 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:30 AM edu.curtin.DisasterSimulator.Start changeInState
-INFO: Casualty occured at Westtown due to chemical
-May 28, 2022 12:27:30 AM edu.curtin.DisasterSimulator.Start changeInState
+May 30, 2022 8:54:28 PM edu.curtin.DisasterSimulator.LowIntensity changeInState
+INFO: Fire at Midtown has been cleaned
+May 30, 2022 8:54:28 PM edu.curtin.DisasterSimulator.Fire update
+INFO: Increment the count of fire at Midtown by one
+May 30, 2022 8:54:28 PM edu.curtin.DisasterSimulator.Start changeInState
+INFO: Damage occured at Westtown due to chemical
+May 30, 2022 8:54:28 PM edu.curtin.DisasterSimulator.Flood update
+INFO: Increment the count of flood at Midtown by one
+May 30, 2022 8:54:28 PM edu.curtin.DisasterSimulator.Flood update
+INFO: Increment the count of flood at Hill Valley by one
+May 30, 2022 8:54:29 PM edu.curtin.DisasterSimulator.Controller control
+INFO: Get the reply from the responders
+May 30, 2022 8:54:29 PM edu.curtin.DisasterSimulator.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+May 30, 2022 8:54:29 PM edu.curtin.DisasterSimulator.Start changeInState
+INFO: Damage occured at Midtown due to flood
+May 30, 2022 8:54:29 PM edu.curtin.DisasterSimulator.Flood update
+INFO: Increment the count of flood at Midtown by one
+May 30, 2022 8:54:29 PM edu.curtin.DisasterSimulator.Start changeInState
+INFO: Casualty occured at Hill Valley due to flood
+May 30, 2022 8:54:29 PM edu.curtin.DisasterSimulator.Start changeInState
+INFO: Damage occured at Hill Valley due to flood
+May 30, 2022 8:54:29 PM edu.curtin.DisasterSimulator.Flood update
+INFO: Increment the count of flood at Hill Valley by one
+May 30, 2022 8:54:30 PM edu.curtin.DisasterSimulator.Controller control
+INFO: Get the reply from the responders
+May 30, 2022 8:54:30 PM edu.curtin.DisasterSimulator.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+May 30, 2022 8:54:30 PM edu.curtin.DisasterSimulator.Start changeInState
+INFO: Casualty occured at Midtown due to flood
+May 30, 2022 8:54:30 PM edu.curtin.DisasterSimulator.Flood update
+INFO: Increment the count of flood at Midtown by one
+May 30, 2022 8:54:30 PM edu.curtin.DisasterSimulator.Flood update
+INFO: Increment the count of flood at Hill Valley by one
+May 30, 2022 8:54:31 PM edu.curtin.DisasterSimulator.Controller control
+INFO: Get the reply from the responders
+May 30, 2022 8:54:31 PM edu.curtin.DisasterSimulator.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+May 30, 2022 8:54:31 PM edu.curtin.DisasterSimulator.Start changeInState
 INFO: Flood at Midtown has ended
-May 28, 2022 12:27:30 AM edu.curtin.DisasterSimulator.Flood update
+May 30, 2022 8:54:31 PM edu.curtin.DisasterSimulator.Flood update
 INFO: Increment the count of flood at Midtown by one
-May 28, 2022 12:27:30 AM edu.curtin.DisasterSimulator.Start changeInState
+May 30, 2022 8:54:31 PM edu.curtin.DisasterSimulator.Start changeInState
 INFO: Flood at Hill Valley has ended
-May 28, 2022 12:27:30 AM edu.curtin.DisasterSimulator.Flood update
+May 30, 2022 8:54:31 PM edu.curtin.DisasterSimulator.Flood update
 INFO: Increment the count of flood at Hill Valley by one
-May 28, 2022 12:27:31 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:32 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:31 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:32 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:32 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:32 PM edu.curtin.DisasterSimulator.Start changeInState
+INFO: Casualty occured at Westtown due to chemical
+May 30, 2022 8:54:33 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:32 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:33 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:32 AM edu.curtin.DisasterSimulator.Start changeInState
+May 30, 2022 8:54:34 PM edu.curtin.DisasterSimulator.Controller control
+INFO: Get the reply from the responders
+May 30, 2022 8:54:34 PM edu.curtin.DisasterSimulator.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+May 30, 2022 8:54:35 PM edu.curtin.DisasterSimulator.Controller control
+INFO: Get the reply from the responders
+May 30, 2022 8:54:35 PM edu.curtin.DisasterSimulator.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+May 30, 2022 8:54:36 PM edu.curtin.DisasterSimulator.Controller control
+INFO: Get the reply from the responders
+May 30, 2022 8:54:36 PM edu.curtin.DisasterSimulator.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+May 30, 2022 8:54:37 PM edu.curtin.DisasterSimulator.Controller control
+INFO: Get the reply from the responders
+May 30, 2022 8:54:37 PM edu.curtin.DisasterSimulator.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+May 30, 2022 8:54:37 PM edu.curtin.DisasterSimulator.Start changeInState
+INFO: Casualty occured at Westtown due to chemical
+May 30, 2022 8:54:38 PM edu.curtin.DisasterSimulator.Controller control
+INFO: Get the reply from the responders
+May 30, 2022 8:54:38 PM edu.curtin.DisasterSimulator.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+May 30, 2022 8:54:39 PM edu.curtin.DisasterSimulator.Controller control
+INFO: Get the reply from the responders
+May 30, 2022 8:54:39 PM edu.curtin.DisasterSimulator.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+May 30, 2022 8:54:39 PM edu.curtin.DisasterSimulator.Start changeInState
 INFO: Damage occured at Westtown due to chemical
-May 28, 2022 12:27:33 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:40 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:33 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:40 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:33 AM edu.curtin.DisasterSimulator.Start changeInState
+May 30, 2022 8:54:41 PM edu.curtin.DisasterSimulator.Controller control
+INFO: Get the reply from the responders
+May 30, 2022 8:54:41 PM edu.curtin.DisasterSimulator.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+May 30, 2022 8:54:42 PM edu.curtin.DisasterSimulator.Controller control
+INFO: Get the reply from the responders
+May 30, 2022 8:54:42 PM edu.curtin.DisasterSimulator.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+May 30, 2022 8:54:43 PM edu.curtin.DisasterSimulator.Controller control
+INFO: Get the reply from the responders
+May 30, 2022 8:54:43 PM edu.curtin.DisasterSimulator.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+May 30, 2022 8:54:43 PM edu.curtin.DisasterSimulator.Start changeInState
 INFO: Damage occured at Westtown due to chemical
-May 28, 2022 12:27:34 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:44 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:34 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:44 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:35 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:45 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:35 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:45 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:36 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:46 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:36 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:46 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:36 AM edu.curtin.DisasterSimulator.Start changeInState
+May 30, 2022 8:54:46 PM edu.curtin.DisasterSimulator.Start changeInState
 INFO: Casualty occured at Westtown due to chemical
-May 28, 2022 12:27:37 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:47 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:37 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:47 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:38 AM edu.curtin.DisasterSimulator.Creator eventCreator
-INFO: Get the reply from the responders
-May 28, 2022 12:27:38 AM edu.curtin.DisasterSimulator.Creator notifyObservers
-INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:39 AM edu.curtin.DisasterSimulator.Creator eventCreator
-INFO: Get the reply from the responders
-May 28, 2022 12:27:39 AM edu.curtin.DisasterSimulator.Creator notifyObservers
-INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:39 AM edu.curtin.DisasterSimulator.Start changeInState
-INFO: Casualty occured at Westtown due to chemical
-May 28, 2022 12:27:39 AM edu.curtin.DisasterSimulator.Start changeInState
+May 30, 2022 8:54:47 PM edu.curtin.DisasterSimulator.Start changeInState
 INFO: Damage occured at Westtown due to chemical
-May 28, 2022 12:27:40 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:48 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:40 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:48 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:40 AM edu.curtin.DisasterSimulator.Start changeInState
+May 30, 2022 8:54:49 PM edu.curtin.DisasterSimulator.Controller control
+INFO: Get the reply from the responders
+May 30, 2022 8:54:49 PM edu.curtin.DisasterSimulator.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+May 30, 2022 8:54:49 PM edu.curtin.DisasterSimulator.Start changeInState
 INFO: Casualty occured at Westtown due to chemical
-May 28, 2022 12:27:41 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:50 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:41 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:50 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:41 AM edu.curtin.DisasterSimulator.Start changeInState
-INFO: Casualty occured at Westtown due to chemical
-May 28, 2022 12:27:42 AM edu.curtin.DisasterSimulator.Creator eventCreator
-INFO: Get the reply from the responders
-May 28, 2022 12:27:42 AM edu.curtin.DisasterSimulator.Creator notifyObservers
-INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:43 AM edu.curtin.DisasterSimulator.Creator eventCreator
-INFO: Get the reply from the responders
-May 28, 2022 12:27:43 AM edu.curtin.DisasterSimulator.Creator notifyObservers
-INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:44 AM edu.curtin.DisasterSimulator.Creator eventCreator
-INFO: Get the reply from the responders
-May 28, 2022 12:27:44 AM edu.curtin.DisasterSimulator.Creator notifyObservers
-INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:44 AM edu.curtin.DisasterSimulator.Start changeInState
+May 30, 2022 8:54:50 PM edu.curtin.DisasterSimulator.Start changeInState
 INFO: Damage occured at Westtown due to chemical
-May 28, 2022 12:27:45 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:51 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:45 AM edu.curtin.DisasterSimulator.Creator notifyObservers
+May 30, 2022 8:54:51 PM edu.curtin.DisasterSimulator.Controller notifyObservers
 INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:46 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:52 PM edu.curtin.DisasterSimulator.Controller control
 INFO: Get the reply from the responders
-May 28, 2022 12:27:46 AM edu.curtin.DisasterSimulator.Creator notifyObservers
-INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:47 AM edu.curtin.DisasterSimulator.Creator eventCreator
-INFO: Get the reply from the responders
-May 28, 2022 12:27:47 AM edu.curtin.DisasterSimulator.Creator notifyObservers
-INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:47 AM edu.curtin.DisasterSimulator.Start changeInState
-INFO: Casualty occured at Westtown due to chemical
-May 28, 2022 12:27:48 AM edu.curtin.DisasterSimulator.Creator eventCreator
-INFO: Get the reply from the responders
-May 28, 2022 12:27:48 AM edu.curtin.DisasterSimulator.Creator notifyObservers
-INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:49 AM edu.curtin.DisasterSimulator.Creator eventCreator
-INFO: Get the reply from the responders
-May 28, 2022 12:27:49 AM edu.curtin.DisasterSimulator.Creator notifyObservers
-INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:49 AM edu.curtin.DisasterSimulator.Start changeInState
-INFO: Casualty occured at Westtown due to chemical
-May 28, 2022 12:27:49 AM edu.curtin.DisasterSimulator.Start changeInState
-INFO: Damage occured at Westtown due to chemical
-May 28, 2022 12:27:50 AM edu.curtin.DisasterSimulator.Creator eventCreator
-INFO: Get the reply from the responders
-May 28, 2022 12:27:50 AM edu.curtin.DisasterSimulator.Creator notifyObservers
-INFO: Notify all the observers in the activeList that a second had passed.
-May 28, 2022 12:27:51 AM edu.curtin.DisasterSimulator.Creator eventCreator
-INFO: Get the reply from the responders
-May 28, 2022 12:27:51 AM edu.curtin.DisasterSimulator.Creator eventCreator
+May 30, 2022 8:54:52 PM edu.curtin.DisasterSimulator.Controller control
 INFO: End the simulation according to the reply from responders

@@ -3,19 +3,19 @@ package edu.curtin.DisasterSimulator;
 import java.util.*;
 import java.util.logging.*;
 
-public class Creator
+public class Controller
 {
-    private final Logger logger = Logger.getLogger(Creator.class.getName());
+    private final Logger logger = Logger.getLogger(Controller.class.getName());
     private Map<String, Emergency> emergencyMap = new HashMap<>();
     private Map<String, Emergency> activeMap = new HashMap<>();
     private List<String> removeList = new ArrayList<>();
     private List<String> responseList = new ArrayList<>();
     private int count = 0;
     
-    public void eventCreator(Map<String, Emergency> map) throws DisasterSimulatorException
+    public void control(ResponderComm rComm, Map<String, Emergency> map) throws DisasterSimulatorException
     {
         emergencyMap = map;
-        ResponderComm resCom = new ResponderCommImpl();
+        ResponderComm resCom = rComm;
         boolean end = false;
         while(!end)
         {
