@@ -14,7 +14,7 @@ public class Controller
      * Hold the control logic of the simulation. Maintains a while loop that increments by one every        *
      * second to keep tarck of time.                                                                        *
      ********************************************************************************************************/
-    public void control(ResponderComm rComm, Map<String, Emergency> map) throws DisasterSimulatorException
+    public void control(ResponderComm rComm, Map<String, Emergency> map) throws EmergencySimulatorException
     {
         Map<String, Emergency> emergencyMap = map;
         ResponderComm resCom = rComm;
@@ -74,7 +74,7 @@ public class Controller
             }
             catch(InterruptedException e)
             {
-                throw new DisasterSimulatorException("Unable to sleep thread!", e);
+                throw new EmergencySimulatorException("Unable to sleep thread!", e);
             }
         }
     }

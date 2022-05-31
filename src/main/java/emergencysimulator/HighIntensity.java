@@ -19,6 +19,7 @@ public class HighIntensity implements EmergencyState
             logger.info(() -> "Fire at "+fire.getLocation()+" has been reduced to LowIntensity");
             fire.setState(new LowIntensity());
             fire.setCount(0);
+            resCom.send("fire low "+fire.getLocation());
         }
         else
         {

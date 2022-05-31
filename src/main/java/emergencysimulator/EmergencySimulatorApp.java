@@ -8,10 +8,10 @@ import java.util.regex.*;
 @SuppressWarnings("PMD.FieldNamingConventions")
 // Logger is the one that triggers FieldNamingConventions. Tried changing the name of the logger but the issue still persists.
 
-public class DisasterSimulatorApp
+public class EmergencySimulatorApp
 {
     private static final Pattern INPUT_PATTERN =Pattern.compile("([0-9]+ (fire|flood|chemical) .+)"); 
-    private static final Logger logger = Logger.getLogger(DisasterSimulatorApp.class.getName());
+    private static final Logger logger = Logger.getLogger(EmergencySimulatorApp.class.getName());
     private static boolean isName = false;
 
     // In BlackBoard David has said not to suppress warnings to the whole class and instead to suppress the warning
@@ -45,7 +45,7 @@ public class DisasterSimulatorApp
                 Map<String, Emergency> emergencies = emergencyCreator(list);
                 controller.control(rComm, emergencies);
             } 
-            catch(DisasterSimulatorException e) 
+            catch(EmergencySimulatorException e) 
             {
                 System.out.println(e.getMessage());
             }
@@ -56,7 +56,7 @@ public class DisasterSimulatorApp
      * Obtains the file name and reads the contents of the file. If file name is not valid      *
      * throws an exception.                                                                     *
      ********************************************************************************************/
-    public static List<String> readFile(String fileName) throws DisasterSimulatorException
+    public static List<String> readFile(String fileName) throws EmergencySimulatorException
     {
         File file = new File(fileName);
         List<String> list = new ArrayList<>();
@@ -72,7 +72,7 @@ public class DisasterSimulatorApp
         catch(IOException e)
         {
             logger.info("Unable to open input file");
-            throw new DisasterSimulatorException("File not found", e);
+            throw new EmergencySimulatorException("File not found", e);
         }
 
         logger.info("Input File Completly read");
@@ -83,7 +83,7 @@ public class DisasterSimulatorApp
      * Obtains the list of inputs returned by the readFile method and creates relevant emergencies.      *
      * Throws an exception if an invalid statement is present in the input list.                        *
      ****************************************************************************************************/
-    public static Map<String, Emergency> emergencyCreator(List<String> list) throws DisasterSimulatorException
+    public static Map<String, Emergency> emergencyCreator(List<String> list) throws EmergencySimulatorException
     {
         Map<String, Emergency> emergencies = new HashMap<>();
         for (String s : list)
@@ -141,7 +141,7 @@ public class DisasterSimulatorApp
             else
             {
                 logger.info("Invalid input file provided");
-                throw new DisasterSimulatorException("Invalid Input File!");
+                throw new EmergencySimulatorException("Invalid Input File!");
             }
         }
         return emergencies;

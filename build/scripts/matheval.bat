@@ -71,7 +71,7 @@ set CLASSPATH=%APP_HOME%\lib\matheval.jar
 
 
 @rem Execute matheval
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %MATHEVAL_OPTS%  -classpath "%CLASSPATH%" edu.curtin.emergencysimulator.DisasterSimulatorApp %*
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %MATHEVAL_OPTS%  -classpath "%CLASSPATH%" edu.curtin.emergencysimulator.EmergencySimulatorApp %*
 
 :end
 @rem End local scope for the variables with windows NT shell

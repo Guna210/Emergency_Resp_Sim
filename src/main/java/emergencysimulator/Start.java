@@ -60,6 +60,7 @@ public class Start implements EmergencyState
                 logger.info(() -> "Chemical at "+chem.getLocation()+" has been cleaned");
                 chem.setState(new End());
                 chem.changeInState();
+                chem.setEndState(true);
             }
             else
             {
