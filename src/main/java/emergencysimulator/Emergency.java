@@ -2,7 +2,6 @@ package edu.curtin.emergencysimulator;
 
 public interface Emergency
 {
-    public void setState(EmergencyState newState);
     public boolean getEndState();
     public void setLocation(String newLocation);
     public String getLocation();

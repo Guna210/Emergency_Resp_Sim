@@ -29,7 +29,6 @@ public class Fire implements Emergency
         setState(new LowIntensity());
     }
 
-    @Override
     public void setState(EmergencyState newState)
     {
         state = newState;

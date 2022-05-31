@@ -23,7 +23,6 @@ public class Chemical implements Emergency
         setState(new Start());
     }
 
-    @Override
     public void setState(EmergencyState newState)
     {
         state = newState;
