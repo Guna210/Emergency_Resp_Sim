@@ -4,6 +4,9 @@ import java.util.*;
 import java.io.*;
 import java.util.logging.*;
 import java.util.regex.*;
+import edu.curtin.emergencysimulator.controller.*;
+import edu.curtin.emergencysimulator.model.*;
+import edu.curtin.emergencysimulator.view.*;
 
 @SuppressWarnings("PMD.FieldNamingConventions")
 // Logger is the one that triggers FieldNamingConventions. Tried changing the name of the logger but the issue still persists.
