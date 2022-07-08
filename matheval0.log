@@ -1,0 +1,462 @@
+Jun 01, 2022 8:29:32 PM edu.curtin.emergencysimulator.EmergencySimulatorApp readFile
+INFO: Input File Completly read
+Jun 01, 2022 8:29:32 PM edu.curtin.emergencysimulator.model.Flood <init>
+INFO: Initialize the state of flood to Start
+Jun 01, 2022 8:29:32 PM edu.curtin.emergencysimulator.EmergencySimulatorApp emergencyCreator
+INFO: Added a flood emergency
+Jun 01, 2022 8:29:32 PM edu.curtin.emergencysimulator.model.Fire <init>
+INFO: Initialize the state of the fire to LowIntensity
+Jun 01, 2022 8:29:32 PM edu.curtin.emergencysimulator.EmergencySimulatorApp emergencyCreator
+INFO: Added a fire emergency
+Jun 01, 2022 8:29:32 PM edu.curtin.emergencysimulator.model.Fire <init>
+INFO: Initialize the state of the fire to LowIntensity
+Jun 01, 2022 8:29:32 PM edu.curtin.emergencysimulator.EmergencySimulatorApp emergencyCreator
+INFO: Added a fire emergency
+Jun 01, 2022 8:29:32 PM edu.curtin.emergencysimulator.model.Flood <init>
+INFO: Initialize the state of flood to Start
+Jun 01, 2022 8:29:32 PM edu.curtin.emergencysimulator.EmergencySimulatorApp emergencyCreator
+INFO: Added a flood emergency
+Jun 01, 2022 8:29:32 PM edu.curtin.emergencysimulator.model.Chemical <init>
+INFO: Initialize the state of chemical to Start
+Jun 01, 2022 8:29:32 PM edu.curtin.emergencysimulator.EmergencySimulatorApp emergencyCreator
+INFO: Added a chemical emergency
+Jun 01, 2022 8:29:32 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:29:32 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:29:33 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:29:33 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:29:34 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:29:34 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:29:35 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:29:35 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:29:36 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:29:36 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:29:37 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:29:37 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:29:38 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:29:38 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:29:39 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:29:39 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:29:40 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:29:40 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:29:41 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:29:41 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:29:42 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:29:42 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:29:43 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:29:43 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:29:44 PM edu.curtin.emergencysimulator.model.Fire initiate
+INFO: Inform responders that a fire started at Hill Valley
+Jun 01, 2022 8:29:44 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Add the started emergencies to the observers list
+Jun 01, 2022 8:29:44 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:29:44 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:29:44 PM edu.curtin.emergencysimulator.model.LowIntensity changeInState
+INFO: Casualty occured at Hill Valley due to fire
+Jun 01, 2022 8:29:44 PM edu.curtin.emergencysimulator.model.Fire update
+INFO: Increment the count of fire at Hill Valley by one
+Jun 01, 2022 8:29:45 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:29:45 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:29:45 PM edu.curtin.emergencysimulator.model.Fire update
+INFO: Increment the count of fire at Hill Valley by one
+Jun 01, 2022 8:29:46 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:29:46 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:29:46 PM edu.curtin.emergencysimulator.model.LowIntensity changeInState
+INFO: Damage occured at Hill Valley due to fire
+Jun 01, 2022 8:29:46 PM edu.curtin.emergencysimulator.model.Fire update
+INFO: Increment the count of fire at Hill Valley by one
+Jun 01, 2022 8:29:47 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:29:47 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:29:47 PM edu.curtin.emergencysimulator.model.Fire update
+INFO: Increment the count of fire at Hill Valley by one
+Jun 01, 2022 8:29:48 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:29:48 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:29:48 PM edu.curtin.emergencysimulator.model.Fire update
+INFO: Increment the count of fire at Hill Valley by one
+Jun 01, 2022 8:29:49 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:29:49 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:29:49 PM edu.curtin.emergencysimulator.model.Fire update
+INFO: Increment the count of fire at Hill Valley by one
+Jun 01, 2022 8:29:50 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:29:50 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:29:50 PM edu.curtin.emergencysimulator.model.LowIntensity changeInState
+INFO: Casualty occured at Hill Valley due to fire
+Jun 01, 2022 8:29:50 PM edu.curtin.emergencysimulator.model.Fire update
+INFO: Increment the count of fire at Hill Valley by one
+Jun 01, 2022 8:29:51 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:29:51 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:29:51 PM edu.curtin.emergencysimulator.model.LowIntensity changeInState
+INFO: Fire at Hill Valley has been cleaned
+Jun 01, 2022 8:29:51 PM edu.curtin.emergencysimulator.model.Fire update
+INFO: Increment the count of fire at Hill Valley by one
+Jun 01, 2022 8:29:52 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:29:52 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:29:53 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:29:53 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:29:54 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:29:54 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:29:55 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:29:55 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:29:56 PM edu.curtin.emergencysimulator.model.Chemical initiate
+INFO: Inform responders that a chemical started at Westtown
+Jun 01, 2022 8:29:56 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Add the started emergencies to the observers list
+Jun 01, 2022 8:29:56 PM edu.curtin.emergencysimulator.model.Flood initiate
+INFO: Inform responders that a flood started at Midtown
+Jun 01, 2022 8:29:56 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Add the started emergencies to the observers list
+Jun 01, 2022 8:29:56 PM edu.curtin.emergencysimulator.model.Flood initiate
+INFO: Inform responders that a flood started at Hill Valley
+Jun 01, 2022 8:29:56 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Add the started emergencies to the observers list
+Jun 01, 2022 8:29:56 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:29:56 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:29:56 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Casualty occured at Westtown due to chemical
+Jun 01, 2022 8:29:56 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Damage occured at Westtown due to chemical
+Jun 01, 2022 8:29:56 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Damage occured at Midtown due to flood
+Jun 01, 2022 8:29:56 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Midtown by one
+Jun 01, 2022 8:29:56 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Hill Valley by one
+Jun 01, 2022 8:29:57 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:29:57 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:29:57 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Casualty occured at Westtown due to chemical
+Jun 01, 2022 8:29:57 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Damage occured at Midtown due to flood
+Jun 01, 2022 8:29:57 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Midtown by one
+Jun 01, 2022 8:29:57 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Damage occured at Hill Valley due to flood
+Jun 01, 2022 8:29:57 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Hill Valley by one
+Jun 01, 2022 8:29:58 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:29:58 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:29:58 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Damage occured at Midtown due to flood
+Jun 01, 2022 8:29:58 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Midtown by one
+Jun 01, 2022 8:29:58 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Hill Valley by one
+Jun 01, 2022 8:29:59 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:29:59 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:29:59 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Casualty occured at Westtown due to chemical
+Jun 01, 2022 8:29:59 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Damage occured at Midtown due to flood
+Jun 01, 2022 8:29:59 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Midtown by one
+Jun 01, 2022 8:29:59 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Hill Valley by one
+Jun 01, 2022 8:30:00 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:00 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:00 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Midtown by one
+Jun 01, 2022 8:30:00 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Damage occured at Hill Valley due to flood
+Jun 01, 2022 8:30:00 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Hill Valley by one
+Jun 01, 2022 8:30:01 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:01 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:01 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Casualty occured at Westtown due to chemical
+Jun 01, 2022 8:30:01 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Midtown by one
+Jun 01, 2022 8:30:01 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Hill Valley by one
+Jun 01, 2022 8:30:02 PM edu.curtin.emergencysimulator.model.Fire initiate
+INFO: Inform responders that a fire started at Midtown
+Jun 01, 2022 8:30:02 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Add the started emergencies to the observers list
+Jun 01, 2022 8:30:02 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:02 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:02 PM edu.curtin.emergencysimulator.model.Fire update
+INFO: Increment the count of fire at Midtown by one
+Jun 01, 2022 8:30:02 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Casualty occured at Westtown due to chemical
+Jun 01, 2022 8:30:02 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Damage occured at Midtown due to flood
+Jun 01, 2022 8:30:02 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Midtown by one
+Jun 01, 2022 8:30:02 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Casualty occured at Hill Valley due to flood
+Jun 01, 2022 8:30:02 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Hill Valley by one
+Jun 01, 2022 8:30:03 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:03 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:03 PM edu.curtin.emergencysimulator.model.Fire update
+INFO: Increment the count of fire at Midtown by one
+Jun 01, 2022 8:30:03 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Damage occured at Midtown due to flood
+Jun 01, 2022 8:30:03 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Midtown by one
+Jun 01, 2022 8:30:03 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Damage occured at Hill Valley due to flood
+Jun 01, 2022 8:30:03 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Hill Valley by one
+Jun 01, 2022 8:30:04 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:04 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:04 PM edu.curtin.emergencysimulator.model.Fire update
+INFO: Increment the count of fire at Midtown by one
+Jun 01, 2022 8:30:04 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Midtown by one
+Jun 01, 2022 8:30:04 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Hill Valley by one
+Jun 01, 2022 8:30:05 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:05 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:05 PM edu.curtin.emergencysimulator.model.LowIntensity changeInState
+INFO: Casualty occured at Midtown due to fire
+Jun 01, 2022 8:30:05 PM edu.curtin.emergencysimulator.model.Fire update
+INFO: Increment the count of fire at Midtown by one
+Jun 01, 2022 8:30:05 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Casualty occured at Midtown due to flood
+Jun 01, 2022 8:30:05 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Midtown by one
+Jun 01, 2022 8:30:05 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Casualty occured at Hill Valley due to flood
+Jun 01, 2022 8:30:05 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Hill Valley by one
+Jun 01, 2022 8:30:06 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:06 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:06 PM edu.curtin.emergencysimulator.model.Fire update
+INFO: Increment the count of fire at Midtown by one
+Jun 01, 2022 8:30:06 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Casualty occured at Westtown due to chemical
+Jun 01, 2022 8:30:06 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Damage occured at Midtown due to flood
+Jun 01, 2022 8:30:06 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Midtown by one
+Jun 01, 2022 8:30:06 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Hill Valley by one
+Jun 01, 2022 8:30:07 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:07 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:07 PM edu.curtin.emergencysimulator.model.Fire update
+INFO: Increment the count of fire at Midtown by one
+Jun 01, 2022 8:30:07 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Midtown by one
+Jun 01, 2022 8:30:07 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Damage occured at Hill Valley due to flood
+Jun 01, 2022 8:30:07 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Hill Valley by one
+Jun 01, 2022 8:30:08 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:08 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:08 PM edu.curtin.emergencysimulator.model.LowIntensity changeInState
+INFO: Fire at Midtown has been cleaned
+Jun 01, 2022 8:30:08 PM edu.curtin.emergencysimulator.model.Fire update
+INFO: Increment the count of fire at Midtown by one
+Jun 01, 2022 8:30:08 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Midtown by one
+Jun 01, 2022 8:30:08 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Hill Valley by one
+Jun 01, 2022 8:30:09 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:09 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:09 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Casualty occured at Westtown due to chemical
+Jun 01, 2022 8:30:09 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Damage occured at Midtown due to flood
+Jun 01, 2022 8:30:09 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Midtown by one
+Jun 01, 2022 8:30:09 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Damage occured at Hill Valley due to flood
+Jun 01, 2022 8:30:09 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Hill Valley by one
+Jun 01, 2022 8:30:10 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:10 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:10 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Midtown by one
+Jun 01, 2022 8:30:10 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Hill Valley by one
+Jun 01, 2022 8:30:11 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:11 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:11 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Flood at Midtown has ended
+Jun 01, 2022 8:30:11 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Midtown by one
+Jun 01, 2022 8:30:11 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Flood at Hill Valley has ended
+Jun 01, 2022 8:30:11 PM edu.curtin.emergencysimulator.model.Flood update
+INFO: Increment the count of flood at Hill Valley by one
+Jun 01, 2022 8:30:12 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:12 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:12 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Damage occured at Westtown due to chemical
+Jun 01, 2022 8:30:13 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:13 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:13 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Casualty occured at Westtown due to chemical
+Jun 01, 2022 8:30:14 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:14 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:14 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Damage occured at Westtown due to chemical
+Jun 01, 2022 8:30:15 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:15 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:16 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:16 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:17 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:17 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:18 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:18 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:19 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:19 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:20 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:20 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:20 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Damage occured at Westtown due to chemical
+Jun 01, 2022 8:30:21 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:21 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:22 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:22 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:23 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:23 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:24 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:24 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:24 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Casualty occured at Westtown due to chemical
+Jun 01, 2022 8:30:25 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:25 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:26 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:26 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:26 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Damage occured at Westtown due to chemical
+Jun 01, 2022 8:30:27 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:27 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:28 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:28 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:29 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:29 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:30 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:30 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:30 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Damage occured at Westtown due to chemical
+Jun 01, 2022 8:30:31 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:31 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
+Jun 01, 2022 8:30:31 PM edu.curtin.emergencysimulator.model.Start changeInState
+INFO: Damage occured at Westtown due to chemical
+Jun 01, 2022 8:30:32 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: Get the reply from the responders
+Jun 01, 2022 8:30:32 PM edu.curtin.emergencysimulator.controller.Controller control
+INFO: End the simulation according to the reply from responders
+Jun 01, 2022 8:30:32 PM edu.curtin.emergencysimulator.controller.Controller notifyObservers
+INFO: Notify all the observers in the activeList that a second had passed.
